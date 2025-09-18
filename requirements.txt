@@ -1,0 +1,8 @@
+streamlit>=1.18
+pandas
+numpy
+pymongo
+scikit-learn
+bcrypt
+matplotlib
+seaborn

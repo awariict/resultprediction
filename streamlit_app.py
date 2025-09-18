@@ -19,13 +19,14 @@ from sklearn.ensemble import VotingClassifier
 from pymongo import MongoClient
 
 # ----------------- Config -----------------
-MONGO_URI = "mongodb://localhost:27017"
+MONGO_URI = "mongodb+srv://euawari_db_user:6SnKvQvXXzrGeypA@cluster0.fkkzcvz.mongodb.net/result_prediction_db?retryWrites=true&w=majority"
 DB_NAME = "result_prediction_db"
 USERS_COLLECTION = "users"
 HISTORY_COLLECTION = "history"
 MODEL_PATH = "ensemble_model.joblib"
 USERS_CSV = "users_backup.csv"
 HISTORY_CSV = "advice_history_backup.csv"
+
 
 # ----------------- Setup -----------------
 client = MongoClient(MONGO_URI)
@@ -321,5 +322,6 @@ with tabs[2]:
     st.header('About & Help')
     st.write('This application predicts student grade categories (low / average / high) using a soft-voting ensemble of KNN and Naive Bayes. Admins can register students, upload CSVs, train models, make predictions, and view advice history & student replies. Students can login with their registration number to view advice and reply.')
     st.write('Pass/Fail summary: Pass = average/high, Fail = low')
+
 
 # ----------------- End -----------------

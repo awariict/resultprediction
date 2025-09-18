@@ -1,0 +1,241 @@
+Registration Number,Sex,Marital Status,City of Residence,Employment Status,Student Age,Family Size,Sponsor,Sponsors Qualification,Programme Motivation,Q11,Q12,Q13,Q14,Q15,Q16,Q17,Q18,Q19,Q20,Q21,Q22,Q23,Q24,Q25,Q26,Q27,Q28,Q29,Q30,Q31,Q32,Q33,Q34,Q35,Courses,Grade,GPA
+REG1000,Female,Single,Rural,Part Time,15-20,1,Self-Sponsor,Primary School,Pursuit of Knowledge,4,5,1,5,4,4,4,3,1,5,3,3,4,3,1,2,4,3,3,5,1,4,2,4,1,"NSC 507, NSC 513, NSC 511",B,4.0
+REG1001,Female,Married,Urban,Full Time,15-20,1,Organization/Scholarship,Primary School,Lack of Employment,2,2,2,3,3,3,2,2,2,2,3,4,3,3,3,3,2,4,2,4,4,4,3,3,1,"NSC 503, NSC 507, NSC 505",E,1.0
+REG1002,Female,Married,Urban,Part Time,41 and above,2,Parents/Guardian,Senior Secondary,Personal Fulfilment,2,5,1,4,2,4,4,2,3,5,3,2,1,1,3,3,3,2,1,4,1,3,1,3,2,"NSC 519, NSC 509, NSC 511",B,4.0
+REG1003,Female,Married,Urban,Unemployed,15-20,2,Organization/Scholarship,Senior Secondary,Personal Fulfilment,5,2,2,5,3,3,3,1,2,1,3,2,1,5,3,3,3,5,5,4,5,2,3,2,4,"NSC 505, NSC 507, NSC 501",B,4.0
+REG1004,Female,Married,Urban,Unemployed,41 and above,1,Organization/Scholarship,Primary School,Personal Fulfilment,5,1,4,3,1,4,5,2,3,1,5,2,1,5,2,3,5,4,1,4,1,4,1,2,4,"NSC 515, NSC 513, NSC 509",E,1.0
+REG1005,Female,Single,Rural,Full Time,15-20,2,Parents/Guardian,Senior Secondary,Lack of Employment,1,1,1,4,3,1,5,5,4,1,4,2,5,2,5,2,1,2,2,5,4,5,2,3,2,"NSC 503, NSC 505, NSC 519",A,5.0
+REG1006,Female,Married,Rural,Full Time,31-40,2,Parents/Guardian,Higher Institution,Pursuit of Knowledge,2,4,2,4,3,5,2,2,4,3,5,2,5,1,2,3,4,2,3,1,5,4,1,4,4,"NSC 515, NSC 501, NSC 507",F,0.0
+REG1007,Female,Divorced,Rural,Unemployed,41 and above,3 and above,Organization/Scholarship,Junior Secondary,Personal Fulfilment,5,1,3,3,4,1,5,5,2,2,3,2,1,1,4,4,1,5,5,2,5,5,3,5,5,"NSC 505, NSC 515, NSC 509",D,2.0
+REG1008,Female,Married,Urban,Part Time,41 and above,2,Organization/Scholarship,Higher Institution,Lack of Employment,2,2,2,5,1,2,3,4,5,2,4,4,5,4,4,1,4,3,1,5,1,1,1,1,3,"NSC 507, NSC 515, NSC 501",D,2.0
+REG1009,Male,Divorced,Rural,Full Time,31-40,2,Parents/Guardian,Primary School,Pursuit of Knowledge,2,4,3,4,3,5,2,5,5,1,4,5,3,2,1,3,5,1,3,5,2,1,5,4,2,"NSC 501, NSC 511, NSC 515",F,0.0
+REG1010,Male,Married,Urban,Part Time,41 and above,1,Parents/Guardian,Junior Secondary,Pursuit of Knowledge,5,3,4,3,1,4,1,2,3,2,4,5,3,4,3,5,5,2,2,4,1,2,4,5,5,"NSC 501, NSC 507, NSC 515",E,1.0
+REG1011,Male,Married,Urban,Part Time,21-30,2,Self-Sponsor,Higher Institution,Pursuit of Knowledge,2,5,5,4,1,3,2,4,4,4,1,5,4,5,4,1,4,2,2,2,2,1,2,5,5,"NSC 509, NSC 519, NSC 507",E,1.0
+REG1012,Female,Divorced,Rural,Unemployed,15-20,1,Self-Sponsor,Primary School,Upgrade Qualification,5,4,4,4,2,3,3,5,2,4,3,4,3,5,3,2,5,3,5,2,5,5,2,3,1,"NSC 519, NSC 507, NSC 513",C,3.0
+REG1013,Male,Single,Rural,Full Time,41 and above,1,Parents/Guardian,Junior Secondary,Pursuit of Knowledge,5,1,2,5,1,4,2,2,4,4,1,1,1,1,3,4,5,4,4,2,4,4,4,3,2,"NSC 503, NSC 513, NSC 505",A,5.0
+REG1014,Female,Married,Urban,Unemployed,21-30,1,Self-Sponsor,Higher Institution,Upgrade Qualification,2,3,2,4,2,5,4,4,2,2,2,3,5,3,1,4,2,2,2,3,1,4,5,3,4,"NSC 515, NSC 509, NSC 519",E,1.0
+REG1015,Female,Divorced,Urban,Part Time,21-30,3 and above,Parents/Guardian,Junior Secondary,Upgrade Qualification,1,5,4,2,1,2,1,4,1,4,4,1,4,3,3,1,3,2,1,5,4,3,5,1,5,"NSC 515, NSC 513, NSC 505",C,3.0
+REG1016,Female,Single,Urban,Full Time,41 and above,1,Self-Sponsor,Junior Secondary,Upgrade Qualification,4,1,3,1,4,1,2,1,1,5,4,2,4,5,4,1,3,4,1,3,4,5,4,4,2,"NSC 519, NSC 513, NSC 501",B,4.0
+REG1017,Male,Married,Urban,Unemployed,15-20,2,Organization/Scholarship,Primary School,Better Employment Prospect,1,1,3,2,1,4,4,4,5,3,1,3,5,3,5,4,4,2,3,1,4,3,4,5,2,"NSC 509, NSC 515, NSC 513",E,1.0
+REG1018,Female,Married,Urban,Full Time,15-20,2,Parents/Guardian,Junior Secondary,Lack of Employment,3,1,3,3,3,2,1,1,2,1,1,2,4,4,1,1,4,2,1,2,4,5,4,5,2,"NSC 509, NSC 503, NSC 519",E,1.0
+REG1019,Male,Divorced,Urban,Full Time,41 and above,2,Self-Sponsor,Junior Secondary,Lack of Employment,4,3,1,4,4,3,4,5,2,2,1,5,4,1,5,2,2,3,4,1,2,3,1,3,2,"NSC 503, NSC 511, NSC 501",E,1.0
+REG1020,Female,Single,Urban,Full Time,21-30,3 and above,Self-Sponsor,Primary School,Better Employment Prospect,5,1,4,1,3,5,4,5,2,3,5,3,4,4,3,5,1,4,4,2,4,1,1,4,4,"NSC 509, NSC 505, NSC 511",A,5.0
+REG1021,Female,Divorced,Urban,Unemployed,21-30,2,Organization/Scholarship,Senior Secondary,Pursuit of Knowledge,5,4,1,1,3,3,1,5,4,4,5,2,5,1,2,2,4,3,4,3,5,2,2,1,1,"NSC 511, NSC 507, NSC 501",B,4.0
+REG1022,Female,Single,Rural,Part Time,15-20,1,Organization/Scholarship,Higher Institution,Better Employment Prospect,5,2,1,1,4,4,4,2,3,5,1,2,5,2,4,1,3,1,1,1,1,4,1,5,2,"NSC 507, NSC 505, NSC 501",B,4.0
+REG1023,Female,Single,Urban,Part Time,15-20,1,Organization/Scholarship,Primary School,Personal Fulfilment,2,3,4,3,1,2,3,1,4,2,4,5,4,3,1,3,3,5,2,1,3,5,3,4,2,"NSC 503, NSC 507, NSC 519",F,0.0
+REG1024,Male,Divorced,Urban,Unemployed,41 and above,3 and above,Self-Sponsor,Senior Secondary,Upgrade Qualification,2,5,3,4,4,3,3,2,2,3,2,5,2,1,4,3,5,1,2,1,4,4,4,2,1,"NSC 501, NSC 505, NSC 519",E,1.0
+REG1025,Female,Single,Urban,Part Time,31-40,1,Organization/Scholarship,Primary School,Personal Fulfilment,2,3,2,3,5,1,4,2,4,4,2,5,4,1,1,1,3,3,3,5,5,2,2,1,2,"NSC 511, NSC 515, NSC 503",F,0.0
+REG1026,Male,Divorced,Urban,Part Time,31-40,1,Organization/Scholarship,Junior Secondary,Personal Fulfilment,1,5,3,1,5,4,2,5,5,5,2,5,1,1,4,1,4,4,4,5,1,2,4,2,2,"NSC 511, NSC 519, NSC 503",F,0.0
+REG1027,Female,Married,Rural,Part Time,21-30,1,Organization/Scholarship,Senior Secondary,Upgrade Qualification,2,5,5,1,3,3,5,4,2,2,5,5,1,3,2,2,4,3,2,3,2,1,2,4,5,"NSC 509, NSC 503, NSC 507",A,5.0
+REG1028,Male,Married,Urban,Full Time,15-20,2,Parents/Guardian,Junior Secondary,Pursuit of Knowledge,2,2,5,2,5,1,5,2,2,2,4,2,2,2,5,5,4,3,4,5,5,5,4,5,4,"NSC 507, NSC 505, NSC 515",A,5.0
+REG1029,Male,Married,Urban,Full Time,15-20,2,Self-Sponsor,Senior Secondary,Pursuit of Knowledge,1,5,1,3,3,1,4,2,3,1,1,3,3,3,1,4,2,1,2,2,3,1,5,1,4,"NSC 515, NSC 509, NSC 513",B,4.0
+REG1030,Male,Divorced,Rural,Full Time,15-20,3 and above,Organization/Scholarship,Higher Institution,Better Employment Prospect,2,1,2,2,1,3,1,5,2,3,3,4,2,3,3,4,4,3,4,2,5,2,2,5,4,"NSC 511, NSC 503, NSC 507",F,0.0
+REG1031,Male,Divorced,Rural,Full Time,21-30,2,Organization/Scholarship,Junior Secondary,Lack of Employment,2,4,5,5,3,3,5,3,2,1,1,4,5,5,3,3,2,2,5,1,4,3,2,2,1,"NSC 513, NSC 501, NSC 507",E,1.0
+REG1032,Male,Married,Urban,Part Time,21-30,3 and above,Organization/Scholarship,Senior Secondary,Upgrade Qualification,4,3,3,4,2,4,1,1,5,4,1,1,5,3,2,1,4,2,1,4,4,2,4,3,2,"NSC 505, NSC 515, NSC 513",C,3.0
+REG1033,Female,Divorced,Rural,Part Time,31-40,1,Self-Sponsor,Senior Secondary,Better Employment Prospect,2,1,3,2,5,4,4,3,5,5,2,4,1,1,3,2,5,3,5,2,1,1,3,4,1,"NSC 509, NSC 519, NSC 501",F,0.0
+REG1034,Female,Single,Rural,Full Time,31-40,3 and above,Organization/Scholarship,Higher Institution,Pursuit of Knowledge,1,2,2,1,2,2,5,1,2,4,3,5,1,5,2,2,2,2,3,2,5,5,3,4,4,"NSC 511, NSC 509, NSC 505",E,1.0
+REG1035,Female,Married,Urban,Part Time,41 and above,2,Self-Sponsor,Higher Institution,Upgrade Qualification,1,5,3,2,4,4,3,4,5,1,4,5,4,5,3,5,1,4,2,4,1,3,2,1,3,"NSC 511, NSC 501, NSC 507",F,0.0
+REG1036,Male,Divorced,Urban,Unemployed,41 and above,1,Parents/Guardian,Junior Secondary,Lack of Employment,3,2,4,5,4,3,2,4,3,2,4,3,2,2,4,3,2,5,5,2,2,4,5,2,5,"NSC 511, NSC 519, NSC 507",F,0.0
+REG1037,Male,Single,Rural,Unemployed,41 and above,2,Self-Sponsor,Junior Secondary,Upgrade Qualification,3,4,3,5,1,3,2,2,3,5,4,1,5,5,3,5,5,5,3,1,2,2,2,1,4,"NSC 507, NSC 513, NSC 503",E,1.0
+REG1038,Female,Divorced,Urban,Full Time,15-20,1,Organization/Scholarship,Junior Secondary,Better Employment Prospect,5,3,3,3,2,5,4,5,4,2,2,3,1,1,5,2,1,2,4,4,1,5,3,5,4,"NSC 505, NSC 513, NSC 503",C,3.0
+REG1039,Female,Divorced,Urban,Full Time,41 and above,3 and above,Organization/Scholarship,Higher Institution,Pursuit of Knowledge,2,2,1,5,1,1,5,3,5,3,3,3,3,1,3,2,3,1,2,4,3,2,3,3,2,"NSC 515, NSC 507, NSC 513",D,2.0
+REG1040,Male,Married,Urban,Part Time,21-30,1,Parents/Guardian,Primary School,Better Employment Prospect,3,1,4,2,5,5,2,3,5,1,4,3,4,3,5,5,3,3,3,3,5,5,2,3,2,"NSC 511, NSC 507, NSC 515",A,5.0
+REG1041,Male,Single,Rural,Part Time,15-20,1,Organization/Scholarship,Junior Secondary,Better Employment Prospect,1,4,5,4,2,4,5,5,2,3,2,1,4,2,5,3,1,3,3,3,3,4,4,4,4,"NSC 505, NSC 503, NSC 509",F,0.0
+REG1042,Female,Married,Urban,Full Time,15-20,3 and above,Organization/Scholarship,Higher Institution,Upgrade Qualification,3,1,3,4,1,3,3,3,5,2,2,1,5,2,1,3,3,3,5,3,5,1,4,3,4,"NSC 515, NSC 503, NSC 509",A,5.0
+REG1043,Male,Single,Urban,Part Time,31-40,1,Self-Sponsor,Junior Secondary,Pursuit of Knowledge,2,3,1,5,4,4,1,3,3,4,3,2,2,4,5,4,2,1,3,4,3,2,5,5,1,"NSC 507, NSC 515, NSC 519",D,2.0
+REG1044,Female,Married,Urban,Part Time,15-20,2,Organization/Scholarship,Junior Secondary,Pursuit of Knowledge,1,1,2,3,5,3,2,3,4,5,4,1,5,4,4,4,1,4,5,4,3,2,5,5,3,"NSC 519, NSC 511, NSC 507",C,3.0
+REG1045,Female,Single,Rural,Unemployed,31-40,2,Organization/Scholarship,Primary School,Upgrade Qualification,4,2,1,4,3,1,2,4,1,1,3,3,4,1,2,2,2,1,3,5,2,1,2,5,5,"NSC 515, NSC 511, NSC 503",E,1.0
+REG1046,Male,Single,Rural,Full Time,31-40,2,Self-Sponsor,Higher Institution,Better Employment Prospect,1,2,4,2,2,3,4,4,5,5,2,4,4,2,4,1,4,2,5,2,1,1,2,2,5,"NSC 515, NSC 501, NSC 519",B,4.0
+REG1047,Female,Single,Rural,Part Time,31-40,2,Organization/Scholarship,Senior Secondary,Upgrade Qualification,3,2,1,3,1,2,1,3,5,4,1,4,1,2,2,3,2,1,5,4,2,4,1,4,3,"NSC 513, NSC 501, NSC 511",C,3.0
+REG1048,Female,Divorced,Urban,Full Time,41 and above,1,Organization/Scholarship,Primary School,Personal Fulfilment,4,5,3,1,5,4,5,4,2,1,2,1,4,1,1,2,5,1,3,4,2,1,5,2,1,"NSC 509, NSC 503, NSC 515",E,1.0
+REG1049,Female,Single,Rural,Part Time,21-30,3 and above,Organization/Scholarship,Primary School,Personal Fulfilment,3,5,4,2,3,5,5,5,4,2,4,1,3,4,3,2,3,4,4,3,5,3,2,2,3,"NSC 513, NSC 515, NSC 509",E,1.0
+REG1050,Female,Divorced,Urban,Full Time,31-40,2,Parents/Guardian,Senior Secondary,Lack of Employment,1,2,2,1,1,1,1,5,5,4,2,5,3,1,5,3,2,1,2,5,5,2,4,3,2,"NSC 515, NSC 505, NSC 519",D,2.0
+REG1051,Male,Married,Urban,Part Time,31-40,2,Self-Sponsor,Higher Institution,Lack of Employment,1,1,2,2,5,1,1,4,4,1,1,3,2,2,1,3,4,3,5,2,3,4,3,5,1,"NSC 509, NSC 519, NSC 515",A,5.0
+REG1052,Female,Married,Rural,Unemployed,41 and above,1,Organization/Scholarship,Primary School,Lack of Employment,2,4,2,2,2,1,5,5,3,1,5,5,3,5,1,2,3,3,4,5,3,4,4,4,5,"NSC 515, NSC 503, NSC 505",A,5.0
+REG1053,Female,Married,Rural,Unemployed,15-20,1,Organization/Scholarship,Junior Secondary,Upgrade Qualification,3,1,1,1,2,5,4,2,4,1,1,3,3,5,3,3,3,4,2,3,2,3,2,4,3,"NSC 515, NSC 501, NSC 511",B,4.0
+REG1054,Male,Married,Rural,Full Time,15-20,2,Parents/Guardian,Senior Secondary,Lack of Employment,4,4,3,5,2,3,5,1,2,1,2,5,1,3,3,2,2,1,1,3,2,5,4,2,1,"NSC 503, NSC 507, NSC 515",E,1.0
+REG1055,Male,Single,Urban,Full Time,41 and above,1,Self-Sponsor,Junior Secondary,Better Employment Prospect,3,3,2,1,2,3,1,2,5,4,1,2,3,3,3,4,1,4,4,3,3,5,4,2,2,"NSC 503, NSC 511, NSC 519",B,4.0
+REG1056,Female,Married,Urban,Full Time,21-30,2,Organization/Scholarship,Senior Secondary,Lack of Employment,3,1,4,3,5,5,2,4,5,2,2,2,4,3,4,3,1,2,3,4,5,5,4,4,2,"NSC 513, NSC 515, NSC 509",B,4.0
+REG1057,Female,Single,Rural,Part Time,15-20,3 and above,Organization/Scholarship,Higher Institution,Pursuit of Knowledge,5,3,4,5,4,1,2,1,5,5,3,1,4,5,4,2,5,5,2,2,3,2,2,4,4,"NSC 513, NSC 503, NSC 509",E,1.0
+REG1058,Female,Single,Rural,Full Time,41 and above,1,Self-Sponsor,Junior Secondary,Upgrade Qualification,5,5,4,4,5,1,4,1,5,3,4,3,2,4,5,4,1,1,3,1,2,4,3,4,1,"NSC 507, NSC 503, NSC 501",E,1.0
+REG1059,Male,Divorced,Urban,Full Time,41 and above,2,Self-Sponsor,Primary School,Personal Fulfilment,5,4,4,5,2,1,2,4,5,3,3,2,3,2,3,4,1,1,3,1,1,4,5,1,5,"NSC 507, NSC 511, NSC 513",B,4.0
+REG1060,Female,Married,Rural,Full Time,31-40,2,Parents/Guardian,Primary School,Personal Fulfilment,4,2,5,5,1,5,5,4,1,2,4,4,4,4,5,4,4,3,5,2,2,2,3,1,3,"NSC 513, NSC 503, NSC 509",E,1.0
+REG1061,Female,Single,Urban,Full Time,21-30,1,Organization/Scholarship,Higher Institution,Lack of Employment,4,4,4,2,5,1,2,3,1,1,3,4,1,4,4,1,1,4,2,4,2,4,1,5,4,"NSC 513, NSC 503, NSC 515",F,0.0
+REG1062,Female,Divorced,Rural,Unemployed,31-40,3 and above,Organization/Scholarship,Primary School,Better Employment Prospect,1,5,1,4,5,4,1,4,4,2,1,1,4,3,3,3,3,1,3,2,5,1,5,3,5,"NSC 503, NSC 511, NSC 501",D,2.0
+REG1063,Male,Married,Urban,Part Time,21-30,3 and above,Self-Sponsor,Primary School,Lack of Employment,2,5,5,2,5,3,5,3,1,4,2,2,2,3,5,3,3,1,4,3,5,4,3,1,2,"NSC 515, NSC 501, NSC 509",A,5.0
+REG1064,Female,Married,Rural,Full Time,41 and above,2,Self-Sponsor,Higher Institution,Lack of Employment,2,1,1,4,3,4,4,2,2,2,5,4,2,4,2,4,4,3,5,2,1,2,3,1,3,"NSC 509, NSC 503, NSC 519",E,1.0
+REG1065,Male,Married,Rural,Full Time,41 and above,1,Self-Sponsor,Junior Secondary,Personal Fulfilment,3,4,2,3,3,1,1,2,5,1,1,3,5,1,3,2,2,1,1,3,5,4,1,3,2,"NSC 513, NSC 501, NSC 515",A,5.0
+REG1066,Female,Divorced,Rural,Full Time,21-30,3 and above,Organization/Scholarship,Higher Institution,Pursuit of Knowledge,2,5,3,1,1,4,4,2,4,2,2,3,1,4,2,1,1,3,3,5,5,3,5,2,4,"NSC 519, NSC 515, NSC 513",A,5.0
+REG1067,Female,Divorced,Urban,Unemployed,41 and above,3 and above,Self-Sponsor,Junior Secondary,Pursuit of Knowledge,5,5,5,4,4,3,3,1,5,2,4,5,4,2,1,5,3,4,1,4,4,1,1,2,3,"NSC 511, NSC 509, NSC 513",A,5.0
+REG1068,Female,Married,Rural,Part Time,41 and above,1,Self-Sponsor,Primary School,Personal Fulfilment,5,1,1,4,2,1,1,1,4,3,1,2,5,2,2,3,4,5,5,1,1,4,3,3,3,"NSC 515, NSC 505, NSC 503",C,3.0
+REG1069,Male,Single,Urban,Unemployed,41 and above,2,Organization/Scholarship,Higher Institution,Better Employment Prospect,2,2,5,5,3,5,3,2,1,4,5,5,3,1,3,1,4,4,1,1,2,1,4,1,1,"NSC 519, NSC 513, NSC 501",D,2.0
+REG1070,Male,Single,Urban,Unemployed,21-30,2,Parents/Guardian,Higher Institution,Better Employment Prospect,4,2,5,4,1,2,4,4,4,3,5,1,3,4,4,2,1,2,1,5,3,5,5,5,4,"NSC 501, NSC 515, NSC 519",C,3.0
+REG1071,Female,Divorced,Rural,Unemployed,31-40,2,Parents/Guardian,Higher Institution,Personal Fulfilment,1,3,4,4,1,5,2,5,1,1,3,2,5,2,1,2,4,5,4,5,5,4,5,1,3,"NSC 501, NSC 511, NSC 505",B,4.0
+REG1072,Male,Single,Rural,Full Time,31-40,3 and above,Parents/Guardian,Junior Secondary,Lack of Employment,4,3,4,2,5,1,3,1,5,2,3,3,1,5,1,4,3,2,5,3,1,4,2,4,3,"NSC 501, NSC 513, NSC 505",C,3.0
+REG1073,Female,Married,Urban,Part Time,21-30,1,Organization/Scholarship,Junior Secondary,Better Employment Prospect,3,3,5,3,4,1,4,2,2,4,3,4,5,5,3,2,4,2,1,4,1,3,2,5,3,"NSC 501, NSC 505, NSC 519",E,1.0
+REG1074,Male,Married,Rural,Full Time,21-30,1,Self-Sponsor,Higher Institution,Better Employment Prospect,1,3,2,5,5,4,2,2,5,2,2,5,5,2,1,3,1,2,2,4,3,4,1,1,5,"NSC 505, NSC 501, NSC 519",E,1.0
+REG1075,Male,Single,Rural,Unemployed,15-20,1,Parents/Guardian,Junior Secondary,Better Employment Prospect,4,5,5,2,3,2,1,2,3,3,2,2,2,2,2,2,3,4,1,3,5,1,1,3,4,"NSC 501, NSC 519, NSC 503",C,3.0
+REG1076,Male,Married,Rural,Full Time,21-30,1,Self-Sponsor,Senior Secondary,Pursuit of Knowledge,4,3,2,1,1,1,5,2,1,1,1,2,4,1,1,2,5,4,1,3,4,1,2,4,1,"NSC 509, NSC 511, NSC 507",E,1.0
+REG1077,Male,Divorced,Rural,Full Time,15-20,3 and above,Parents/Guardian,Higher Institution,Lack of Employment,5,1,5,5,1,3,4,3,5,1,4,1,5,5,4,3,1,4,2,4,1,5,4,3,2,"NSC 515, NSC 501, NSC 513",D,2.0
+REG1078,Male,Married,Urban,Part Time,15-20,3 and above,Organization/Scholarship,Senior Secondary,Personal Fulfilment,3,2,5,1,5,3,4,5,2,3,1,3,3,1,2,2,2,4,3,1,5,1,5,5,3,"NSC 503, NSC 511, NSC 507",D,2.0
+REG1079,Male,Married,Rural,Part Time,31-40,3 and above,Self-Sponsor,Senior Secondary,Personal Fulfilment,5,5,3,3,1,4,3,1,4,5,2,1,3,4,3,4,1,4,2,3,2,5,3,5,5,"NSC 503, NSC 515, NSC 507",C,3.0
+REG1080,Female,Married,Urban,Unemployed,41 and above,1,Parents/Guardian,Higher Institution,Better Employment Prospect,3,3,1,5,5,5,3,4,1,1,1,5,1,1,5,1,5,4,5,5,4,3,2,5,5,"NSC 511, NSC 519, NSC 509",C,3.0
+REG1081,Male,Single,Urban,Part Time,41 and above,1,Parents/Guardian,Primary School,Better Employment Prospect,4,2,3,4,3,4,3,3,5,2,4,3,1,2,5,4,5,2,4,3,5,4,3,4,4,"NSC 501, NSC 513, NSC 515",E,1.0
+REG1082,Female,Married,Rural,Unemployed,21-30,2,Organization/Scholarship,Higher Institution,Lack of Employment,3,3,2,1,4,1,2,2,5,4,1,4,3,3,4,5,4,4,3,1,5,3,5,1,4,"NSC 505, NSC 515, NSC 513",C,3.0
+REG1083,Male,Single,Rural,Part Time,21-30,1,Self-Sponsor,Junior Secondary,Lack of Employment,4,2,1,5,2,4,3,3,5,3,4,3,4,3,5,4,3,4,1,4,1,3,5,5,4,"NSC 503, NSC 509, NSC 507",C,3.0
+REG1084,Female,Divorced,Rural,Part Time,31-40,1,Parents/Guardian,Primary School,Lack of Employment,4,5,1,5,1,1,2,1,2,2,5,4,2,1,3,5,2,4,2,4,4,3,1,3,2,"NSC 503, NSC 513, NSC 505",C,3.0
+REG1085,Male,Divorced,Urban,Part Time,41 and above,2,Organization/Scholarship,Senior Secondary,Upgrade Qualification,4,2,3,4,1,2,3,3,3,2,1,1,2,2,5,4,2,2,1,4,1,5,5,4,3,"NSC 509, NSC 507, NSC 519",E,1.0
+REG1086,Female,Divorced,Urban,Part Time,31-40,2,Organization/Scholarship,Higher Institution,Better Employment Prospect,5,3,3,1,5,3,2,5,2,5,1,3,4,2,1,3,5,4,3,4,2,4,5,4,4,"NSC 505, NSC 501, NSC 515",A,5.0
+REG1087,Female,Divorced,Rural,Unemployed,41 and above,1,Organization/Scholarship,Senior Secondary,Lack of Employment,3,3,4,3,1,4,1,5,2,1,3,1,3,5,4,1,4,2,2,2,5,1,4,4,5,"NSC 519, NSC 505, NSC 515",A,5.0
+REG1088,Female,Married,Urban,Part Time,15-20,1,Organization/Scholarship,Senior Secondary,Personal Fulfilment,4,4,3,3,2,3,3,5,2,5,3,2,4,5,2,2,1,5,4,5,2,2,1,4,2,"NSC 507, NSC 503, NSC 519",C,3.0
+REG1089,Male,Divorced,Rural,Full Time,41 and above,2,Self-Sponsor,Higher Institution,Personal Fulfilment,4,4,1,4,4,3,4,2,1,3,1,5,2,3,4,3,1,1,4,4,3,3,2,5,1,"NSC 509, NSC 503, NSC 507",C,3.0
+REG1090,Female,Married,Urban,Part Time,15-20,3 and above,Organization/Scholarship,Senior Secondary,Personal Fulfilment,1,1,3,4,2,1,2,1,1,2,1,2,4,4,3,5,1,5,1,1,5,1,5,5,2,"NSC 507, NSC 515, NSC 519",C,3.0
+REG1091,Male,Single,Urban,Part Time,15-20,1,Parents/Guardian,Junior Secondary,Personal Fulfilment,3,4,4,5,3,3,2,3,3,5,1,5,3,1,3,4,4,5,2,2,4,3,4,1,4,"NSC 515, NSC 513, NSC 519",A,5.0
+REG1092,Female,Single,Rural,Full Time,21-30,1,Organization/Scholarship,Primary School,Better Employment Prospect,1,2,1,5,1,2,2,2,4,2,2,4,2,2,4,3,5,5,2,4,1,3,4,4,4,"NSC 505, NSC 503, NSC 513",A,5.0
+REG1093,Male,Married,Urban,Full Time,21-30,2,Organization/Scholarship,Junior Secondary,Better Employment Prospect,1,1,1,1,3,2,1,2,2,1,5,2,1,1,3,3,5,5,1,2,5,5,2,3,3,"NSC 519, NSC 505, NSC 503",F,0.0
+REG1094,Male,Married,Rural,Full Time,41 and above,3 and above,Organization/Scholarship,Higher Institution,Personal Fulfilment,5,3,3,4,2,5,1,2,2,2,1,4,3,5,4,2,4,1,4,5,5,4,2,2,4,"NSC 509, NSC 507, NSC 519",F,0.0
+REG1095,Male,Divorced,Urban,Full Time,15-20,2,Organization/Scholarship,Junior Secondary,Better Employment Prospect,5,3,1,3,3,5,5,1,5,3,1,4,1,3,5,3,5,3,3,5,3,5,3,1,3,"NSC 507, NSC 501, NSC 515",C,3.0
+REG1096,Female,Divorced,Urban,Full Time,41 and above,1,Organization/Scholarship,Higher Institution,Lack of Employment,3,4,4,4,1,4,2,2,5,1,2,1,2,1,4,1,3,4,4,1,4,3,5,5,3,"NSC 503, NSC 501, NSC 515",C,3.0
+REG1097,Male,Single,Rural,Full Time,31-40,3 and above,Organization/Scholarship,Higher Institution,Better Employment Prospect,2,1,1,3,2,5,5,5,3,4,1,2,2,2,4,3,1,5,1,5,4,2,2,3,2,"NSC 505, NSC 509, NSC 519",C,3.0
+REG1098,Male,Married,Urban,Part Time,31-40,1,Organization/Scholarship,Primary School,Better Employment Prospect,5,4,5,4,4,2,3,2,4,5,5,3,2,2,3,4,2,1,3,1,2,2,4,5,2,"NSC 507, NSC 503, NSC 513",E,1.0
+REG1099,Male,Divorced,Urban,Part Time,15-20,1,Organization/Scholarship,Senior Secondary,Pursuit of Knowledge,3,3,1,4,5,2,3,4,4,2,3,1,4,2,4,3,1,5,3,2,1,5,4,3,2,"NSC 501, NSC 503, NSC 515",B,4.0
+REG1100,Male,Divorced,Urban,Part Time,15-20,1,Organization/Scholarship,Primary School,Lack of Employment,2,4,2,1,4,3,5,5,2,5,3,4,5,1,1,2,5,2,5,4,3,4,4,5,5,"NSC 503, NSC 515, NSC 507",A,5.0
+REG1101,Female,Married,Rural,Full Time,41 and above,2,Organization/Scholarship,Senior Secondary,Upgrade Qualification,2,1,2,3,5,1,4,2,2,4,2,2,5,4,1,3,2,4,1,5,2,5,2,4,3,"NSC 513, NSC 519, NSC 507",C,3.0
+REG1102,Male,Divorced,Urban,Full Time,15-20,2,Parents/Guardian,Higher Institution,Upgrade Qualification,4,2,4,2,2,5,1,2,1,3,2,2,2,4,4,5,5,2,5,2,5,2,4,2,5,"NSC 509, NSC 501, NSC 519",F,0.0
+REG1103,Female,Divorced,Urban,Part Time,41 and above,3 and above,Organization/Scholarship,Senior Secondary,Lack of Employment,5,1,4,1,4,2,3,5,3,1,2,3,5,5,5,3,1,1,1,5,2,5,4,2,3,"NSC 513, NSC 511, NSC 501",E,1.0
+REG1104,Male,Married,Urban,Unemployed,15-20,2,Self-Sponsor,Junior Secondary,Better Employment Prospect,3,2,4,2,1,2,1,5,1,3,3,1,2,1,5,3,5,3,2,1,1,3,3,2,1,"NSC 501, NSC 507, NSC 513",F,0.0
+REG1105,Female,Single,Rural,Unemployed,15-20,2,Organization/Scholarship,Higher Institution,Personal Fulfilment,4,2,2,1,1,4,4,1,1,2,3,4,4,3,4,1,4,1,5,3,1,4,4,1,3,"NSC 507, NSC 503, NSC 505",C,3.0
+REG1106,Male,Married,Rural,Part Time,15-20,1,Self-Sponsor,Junior Secondary,Better Employment Prospect,3,1,3,2,1,1,3,5,4,4,1,2,1,5,5,3,2,4,2,2,4,2,5,3,4,"NSC 519, NSC 515, NSC 511",A,5.0
+REG1107,Male,Single,Rural,Unemployed,21-30,2,Parents/Guardian,Primary School,Personal Fulfilment,4,5,1,1,5,5,5,5,3,5,3,4,2,2,2,1,2,2,4,4,4,4,3,4,2,"NSC 503, NSC 511, NSC 509",A,5.0
+REG1108,Male,Divorced,Urban,Unemployed,31-40,1,Parents/Guardian,Higher Institution,Lack of Employment,1,3,5,3,4,3,2,3,5,3,4,4,3,2,4,2,2,3,2,2,2,4,3,3,3,"NSC 507, NSC 513, NSC 503",E,1.0
+REG1109,Female,Single,Rural,Part Time,41 and above,3 and above,Parents/Guardian,Senior Secondary,Better Employment Prospect,5,4,3,5,2,1,3,5,4,4,2,2,4,4,4,1,1,2,5,4,4,3,3,2,5,"NSC 519, NSC 515, NSC 505",C,3.0
+REG1110,Female,Married,Rural,Part Time,31-40,3 and above,Parents/Guardian,Primary School,Upgrade Qualification,3,5,2,3,5,1,3,5,3,5,5,2,5,2,5,4,2,4,3,1,2,1,2,3,2,"NSC 503, NSC 519, NSC 501",F,0.0
+REG1111,Male,Single,Urban,Part Time,15-20,1,Parents/Guardian,Higher Institution,Upgrade Qualification,4,5,3,3,5,3,4,1,1,5,3,1,5,1,5,3,5,2,5,4,4,4,5,4,4,"NSC 519, NSC 505, NSC 509",A,5.0
+REG1112,Male,Divorced,Rural,Part Time,41 and above,2,Organization/Scholarship,Primary School,Personal Fulfilment,4,1,3,3,1,1,5,2,5,3,3,4,2,2,4,1,3,3,5,4,4,5,1,1,5,"NSC 515, NSC 509, NSC 511",F,0.0
+REG1113,Female,Divorced,Rural,Full Time,41 and above,2,Self-Sponsor,Senior Secondary,Pursuit of Knowledge,2,3,4,5,3,4,2,1,5,1,4,2,2,3,5,5,1,1,4,1,3,3,5,5,4,"NSC 505, NSC 519, NSC 503",B,4.0
+REG1114,Male,Single,Urban,Full Time,41 and above,1,Parents/Guardian,Primary School,Better Employment Prospect,2,4,4,3,3,5,2,3,4,5,1,2,2,1,2,3,2,5,1,4,2,4,5,3,2,"NSC 515, NSC 509, NSC 513",D,2.0
+REG1115,Male,Single,Rural,Part Time,15-20,2,Organization/Scholarship,Higher Institution,Lack of Employment,3,2,4,1,2,4,3,1,3,2,5,3,3,3,1,5,2,5,3,1,2,4,4,3,2,"NSC 501, NSC 503, NSC 511",A,5.0
+REG1116,Female,Married,Urban,Unemployed,41 and above,3 and above,Organization/Scholarship,Primary School,Personal Fulfilment,4,5,2,2,5,2,4,5,2,3,3,3,5,4,3,5,5,4,5,2,3,2,5,3,5,"NSC 503, NSC 519, NSC 505",F,0.0
+REG1117,Male,Married,Urban,Full Time,31-40,3 and above,Self-Sponsor,Primary School,Lack of Employment,2,5,5,5,5,4,3,1,5,3,1,4,5,3,2,5,5,5,5,4,1,4,2,3,2,"NSC 501, NSC 511, NSC 515",C,3.0
+REG1118,Male,Single,Urban,Full Time,21-30,3 and above,Self-Sponsor,Junior Secondary,Personal Fulfilment,1,5,1,5,4,4,2,3,2,2,2,1,1,2,1,1,1,4,1,5,3,2,2,5,2,"NSC 519, NSC 505, NSC 515",D,2.0
+REG1119,Male,Divorced,Urban,Unemployed,31-40,1,Parents/Guardian,Primary School,Upgrade Qualification,5,3,3,4,1,2,3,2,3,2,2,5,1,4,1,1,5,1,2,4,4,4,2,4,1,"NSC 507, NSC 513, NSC 509",C,3.0
+REG1120,Male,Married,Rural,Unemployed,41 and above,1,Parents/Guardian,Higher Institution,Pursuit of Knowledge,4,5,5,5,1,2,1,5,4,5,3,2,5,1,5,2,2,3,3,1,1,4,4,2,5,"NSC 501, NSC 507, NSC 519",E,1.0
+REG1121,Male,Married,Rural,Unemployed,31-40,2,Organization/Scholarship,Primary School,Better Employment Prospect,4,4,5,1,3,1,3,1,2,1,1,2,2,5,5,5,2,5,4,2,2,1,5,2,3,"NSC 519, NSC 507, NSC 509",E,1.0
+REG1122,Female,Married,Urban,Part Time,41 and above,3 and above,Self-Sponsor,Primary School,Personal Fulfilment,4,3,3,2,2,3,5,4,5,1,4,4,2,3,2,1,3,2,3,2,5,3,1,1,2,"NSC 507, NSC 511, NSC 503",D,2.0
+REG1123,Male,Divorced,Urban,Unemployed,41 and above,1,Organization/Scholarship,Senior Secondary,Upgrade Qualification,2,1,4,5,2,4,3,3,2,3,2,5,2,5,1,1,4,2,1,3,1,5,1,3,5,"NSC 507, NSC 515, NSC 501",C,3.0
+REG1124,Male,Married,Urban,Full Time,41 and above,3 and above,Parents/Guardian,Primary School,Better Employment Prospect,5,1,4,4,2,4,4,5,1,4,4,5,5,1,5,1,2,4,3,5,2,4,5,2,2,"NSC 511, NSC 501, NSC 513",D,2.0
+REG1125,Male,Divorced,Rural,Unemployed,21-30,3 and above,Parents/Guardian,Senior Secondary,Personal Fulfilment,3,3,5,5,1,4,5,3,4,1,3,2,5,3,5,3,3,1,3,4,2,4,2,5,1,"NSC 507, NSC 519, NSC 511",D,2.0
+REG1126,Female,Married,Rural,Part Time,21-30,1,Self-Sponsor,Primary School,Personal Fulfilment,3,1,1,5,2,2,2,4,5,5,2,3,5,3,5,2,3,1,2,5,2,3,2,2,5,"NSC 505, NSC 509, NSC 503",C,3.0
+REG1127,Male,Married,Rural,Part Time,41 and above,3 and above,Self-Sponsor,Primary School,Lack of Employment,3,1,5,4,4,2,5,5,2,1,2,1,2,4,4,5,3,5,4,2,3,2,1,2,2,"NSC 511, NSC 515, NSC 513",D,2.0
+REG1128,Female,Married,Urban,Unemployed,21-30,3 and above,Organization/Scholarship,Senior Secondary,Better Employment Prospect,2,2,4,5,5,5,2,1,5,4,1,4,1,5,3,2,2,5,4,2,5,5,3,4,3,"NSC 513, NSC 507, NSC 503",E,1.0
+REG1129,Female,Single,Rural,Full Time,21-30,3 and above,Self-Sponsor,Junior Secondary,Personal Fulfilment,1,1,2,1,5,3,2,3,3,5,2,2,2,3,5,4,1,2,2,3,3,1,5,3,3,"NSC 511, NSC 503, NSC 507",E,1.0
+REG1130,Male,Divorced,Rural,Unemployed,31-40,1,Parents/Guardian,Junior Secondary,Lack of Employment,4,5,1,3,1,1,2,2,5,3,1,3,5,5,1,1,1,5,4,3,2,1,4,4,1,"NSC 515, NSC 501, NSC 511",B,4.0
+REG1131,Female,Single,Urban,Part Time,15-20,1,Organization/Scholarship,Higher Institution,Pursuit of Knowledge,5,4,5,1,2,1,1,4,1,1,5,3,3,4,5,1,4,5,5,4,5,1,3,1,1,"NSC 511, NSC 503, NSC 515",C,3.0
+REG1132,Male,Married,Urban,Full Time,15-20,1,Parents/Guardian,Higher Institution,Lack of Employment,1,3,5,1,5,2,3,5,3,5,2,5,5,2,4,5,2,5,2,5,1,2,3,1,2,"NSC 513, NSC 501, NSC 519",D,2.0
+REG1133,Male,Single,Rural,Full Time,21-30,3 and above,Parents/Guardian,Senior Secondary,Lack of Employment,3,4,3,3,1,5,4,1,3,3,3,2,1,5,5,2,3,4,4,5,1,3,5,5,1,"NSC 511, NSC 513, NSC 519",A,5.0
+REG1134,Male,Divorced,Urban,Part Time,41 and above,3 and above,Self-Sponsor,Junior Secondary,Pursuit of Knowledge,2,4,5,2,1,2,2,2,1,1,5,1,2,1,1,5,3,3,5,5,4,5,4,1,5,"NSC 513, NSC 505, NSC 509",F,0.0
+REG1135,Male,Single,Rural,Part Time,41 and above,1,Self-Sponsor,Senior Secondary,Personal Fulfilment,5,5,4,2,1,4,4,2,2,1,1,3,2,5,2,2,5,2,3,5,4,3,5,1,1,"NSC 501, NSC 503, NSC 505",F,0.0
+REG1136,Female,Single,Urban,Unemployed,41 and above,3 and above,Self-Sponsor,Junior Secondary,Pursuit of Knowledge,2,2,3,1,4,4,1,3,3,2,1,1,4,4,1,5,3,4,3,5,5,2,1,5,3,"NSC 515, NSC 505, NSC 511",C,3.0
+REG1137,Female,Married,Rural,Part Time,21-30,3 and above,Organization/Scholarship,Higher Institution,Pursuit of Knowledge,1,4,3,1,1,5,4,4,2,5,2,4,5,2,4,5,1,1,4,2,4,5,4,1,1,"NSC 511, NSC 507, NSC 515",C,3.0
+REG1138,Male,Divorced,Urban,Full Time,15-20,3 and above,Parents/Guardian,Junior Secondary,Pursuit of Knowledge,4,4,4,1,5,4,5,3,3,2,3,3,3,4,2,2,1,1,5,3,3,1,4,2,3,"NSC 519, NSC 501, NSC 505",E,1.0
+REG1139,Male,Single,Rural,Part Time,31-40,1,Self-Sponsor,Higher Institution,Upgrade Qualification,1,2,5,1,1,3,4,2,5,4,2,3,4,3,4,4,4,1,5,5,4,3,1,4,1,"NSC 519, NSC 501, NSC 515",C,3.0
+REG1140,Male,Married,Urban,Part Time,31-40,2,Organization/Scholarship,Higher Institution,Pursuit of Knowledge,2,4,4,5,4,4,3,1,2,1,5,5,5,3,3,1,5,3,4,3,4,2,5,3,4,"NSC 507, NSC 503, NSC 509",D,2.0
+REG1141,Male,Single,Urban,Part Time,31-40,3 and above,Self-Sponsor,Higher Institution,Better Employment Prospect,3,1,3,3,4,3,3,4,2,2,5,2,3,2,5,3,2,5,1,2,3,4,2,4,1,"NSC 513, NSC 501, NSC 511",E,1.0
+REG1142,Male,Divorced,Urban,Part Time,21-30,2,Parents/Guardian,Junior Secondary,Better Employment Prospect,3,1,3,2,5,1,3,2,4,2,2,1,2,2,1,2,4,3,2,3,1,5,5,5,4,"NSC 513, NSC 519, NSC 503",D,2.0
+REG1143,Female,Married,Rural,Full Time,15-20,3 and above,Self-Sponsor,Junior Secondary,Pursuit of Knowledge,2,3,4,3,4,4,5,5,5,4,4,5,4,4,1,5,3,3,4,3,2,4,2,1,1,"NSC 507, NSC 515, NSC 509",C,3.0
+REG1144,Female,Married,Urban,Unemployed,15-20,3 and above,Self-Sponsor,Junior Secondary,Upgrade Qualification,2,5,4,5,2,4,4,4,3,4,3,2,3,2,2,5,4,5,1,3,5,3,1,2,4,"NSC 503, NSC 501, NSC 519",E,1.0
+REG1145,Female,Married,Rural,Unemployed,15-20,3 and above,Self-Sponsor,Junior Secondary,Pursuit of Knowledge,4,2,2,2,5,1,5,1,5,4,2,5,5,3,4,1,1,1,3,2,2,5,1,4,5,"NSC 501, NSC 503, NSC 509",A,5.0
+REG1146,Male,Single,Urban,Unemployed,41 and above,3 and above,Self-Sponsor,Junior Secondary,Personal Fulfilment,3,3,5,4,4,1,2,3,2,2,4,2,5,3,5,3,1,5,5,1,5,4,5,1,3,"NSC 509, NSC 503, NSC 511",C,3.0
+REG1147,Male,Divorced,Urban,Full Time,21-30,2,Self-Sponsor,Senior Secondary,Better Employment Prospect,3,5,3,1,3,1,4,4,5,1,2,2,5,5,5,3,2,1,4,4,4,1,5,5,5,"NSC 519, NSC 511, NSC 509",C,3.0
+REG1148,Male,Married,Urban,Part Time,15-20,3 and above,Self-Sponsor,Higher Institution,Pursuit of Knowledge,5,4,1,1,2,1,5,1,3,5,2,5,2,1,2,4,5,3,2,3,5,3,4,5,5,"NSC 513, NSC 511, NSC 503",A,5.0
+REG1149,Female,Divorced,Rural,Full Time,41 and above,1,Self-Sponsor,Senior Secondary,Lack of Employment,4,1,1,5,5,4,1,2,5,3,1,4,2,3,5,2,3,5,2,3,5,1,1,5,5,"NSC 519, NSC 505, NSC 509",E,1.0
+REG1150,Female,Single,Rural,Unemployed,21-30,1,Self-Sponsor,Higher Institution,Pursuit of Knowledge,3,1,3,2,4,1,2,4,3,1,4,5,2,5,2,4,5,2,4,5,5,2,2,1,5,"NSC 503, NSC 519, NSC 501",F,0.0
+REG1151,Male,Single,Rural,Part Time,15-20,3 and above,Self-Sponsor,Primary School,Pursuit of Knowledge,1,3,1,3,2,1,3,3,2,3,1,3,1,2,4,4,2,5,5,1,3,3,4,4,3,"NSC 511, NSC 507, NSC 505",E,1.0
+REG1152,Female,Married,Rural,Unemployed,21-30,1,Parents/Guardian,Senior Secondary,Better Employment Prospect,3,2,4,4,3,5,5,4,5,1,1,3,4,3,3,1,1,3,1,5,1,3,2,2,4,"NSC 507, NSC 515, NSC 511",E,1.0
+REG1153,Female,Single,Rural,Part Time,31-40,1,Self-Sponsor,Junior Secondary,Better Employment Prospect,5,4,5,3,3,1,5,5,3,1,4,4,3,3,1,5,1,4,1,5,1,2,4,1,3,"NSC 515, NSC 503, NSC 513",F,0.0
+REG1154,Female,Married,Rural,Full Time,31-40,2,Parents/Guardian,Higher Institution,Lack of Employment,5,5,2,4,2,1,3,5,2,4,3,1,1,1,3,1,2,2,1,3,4,2,4,4,4,"NSC 511, NSC 515, NSC 507",F,0.0
+REG1155,Male,Single,Urban,Unemployed,21-30,1,Organization/Scholarship,Primary School,Pursuit of Knowledge,5,4,1,2,3,1,3,3,3,1,2,1,1,4,3,1,5,3,4,5,2,3,4,5,5,"NSC 507, NSC 515, NSC 511",C,3.0
+REG1156,Female,Married,Rural,Unemployed,31-40,3 and above,Parents/Guardian,Primary School,Upgrade Qualification,5,1,3,3,4,3,4,2,4,4,2,1,1,3,1,5,2,1,5,2,4,5,5,3,3,"NSC 501, NSC 505, NSC 519",A,5.0
+REG1157,Male,Married,Urban,Unemployed,31-40,2,Self-Sponsor,Senior Secondary,Upgrade Qualification,4,3,4,4,2,3,4,5,1,1,2,3,3,3,4,1,4,4,2,4,1,5,2,4,3,"NSC 509, NSC 513, NSC 507",A,5.0
+REG1158,Male,Married,Urban,Unemployed,15-20,1,Self-Sponsor,Higher Institution,Pursuit of Knowledge,4,3,2,5,4,5,5,4,4,5,5,1,1,1,1,1,2,5,5,5,3,1,3,4,5,"NSC 505, NSC 501, NSC 513",E,1.0
+REG1159,Female,Married,Rural,Unemployed,21-30,3 and above,Self-Sponsor,Higher Institution,Lack of Employment,1,2,4,3,1,2,4,1,1,4,3,4,3,4,5,2,4,2,4,2,1,4,1,2,4,"NSC 509, NSC 519, NSC 515",F,0.0
+REG1160,Male,Married,Urban,Unemployed,21-30,2,Self-Sponsor,Primary School,Upgrade Qualification,2,2,3,4,4,2,3,2,4,3,5,4,5,3,5,1,2,2,2,5,5,5,4,5,2,"NSC 505, NSC 509, NSC 511",C,3.0
+REG1161,Female,Married,Rural,Unemployed,15-20,2,Organization/Scholarship,Higher Institution,Pursuit of Knowledge,5,2,4,2,4,5,1,4,4,1,4,3,5,1,1,2,2,5,2,4,5,3,4,2,3,"NSC 519, NSC 507, NSC 503",C,3.0
+REG1162,Male,Married,Urban,Full Time,15-20,2,Self-Sponsor,Senior Secondary,Personal Fulfilment,3,4,3,4,3,3,5,5,3,4,3,5,5,2,5,3,3,2,3,3,4,5,5,5,5,"NSC 513, NSC 515, NSC 503",A,5.0
+REG1163,Female,Single,Urban,Part Time,31-40,3 and above,Self-Sponsor,Higher Institution,Pursuit of Knowledge,2,1,5,4,2,5,4,3,4,4,5,5,5,4,1,5,4,5,4,5,2,2,3,5,1,"NSC 511, NSC 515, NSC 505",D,2.0
+REG1164,Male,Married,Rural,Part Time,31-40,1,Parents/Guardian,Primary School,Pursuit of Knowledge,4,5,3,5,2,2,2,5,4,5,4,3,4,4,4,4,1,5,1,4,3,3,2,2,5,"NSC 509, NSC 513, NSC 503",C,3.0
+REG1165,Female,Divorced,Rural,Unemployed,15-20,1,Self-Sponsor,Junior Secondary,Lack of Employment,1,4,1,1,3,3,1,3,2,2,1,3,1,4,5,5,3,3,2,2,3,3,1,4,3,"NSC 513, NSC 511, NSC 509",C,3.0
+REG1166,Female,Divorced,Urban,Full Time,41 and above,1,Parents/Guardian,Junior Secondary,Lack of Employment,1,3,2,5,2,5,5,5,1,3,2,5,5,4,3,1,3,2,1,1,3,5,2,3,2,"NSC 505, NSC 509, NSC 507",C,3.0
+REG1167,Male,Divorced,Urban,Full Time,15-20,2,Organization/Scholarship,Junior Secondary,Lack of Employment,1,4,4,3,5,1,4,3,3,1,5,4,4,3,5,3,3,2,3,5,2,5,4,2,5,"NSC 505, NSC 519, NSC 501",A,5.0
+REG1168,Male,Single,Rural,Unemployed,21-30,1,Self-Sponsor,Junior Secondary,Lack of Employment,3,1,1,2,2,1,2,4,3,3,2,1,1,5,4,3,5,2,3,5,2,2,1,3,3,"NSC 501, NSC 519, NSC 515",E,1.0
+REG1169,Female,Single,Rural,Unemployed,41 and above,3 and above,Organization/Scholarship,Higher Institution,Better Employment Prospect,5,1,4,3,5,5,2,4,2,4,2,5,2,1,3,4,5,5,2,4,5,5,3,1,4,"NSC 519, NSC 511, NSC 513",A,5.0
+REG1170,Male,Single,Urban,Unemployed,31-40,1,Parents/Guardian,Primary School,Better Employment Prospect,5,4,2,3,4,4,4,3,5,1,4,3,4,1,4,5,2,4,5,1,3,2,4,1,3,"NSC 513, NSC 509, NSC 515",D,2.0
+REG1171,Female,Married,Rural,Part Time,31-40,3 and above,Organization/Scholarship,Higher Institution,Lack of Employment,1,5,2,3,2,4,4,1,1,4,1,1,5,1,5,1,1,3,1,3,2,4,1,1,1,"NSC 503, NSC 515, NSC 507",B,4.0
+REG1172,Male,Married,Rural,Unemployed,21-30,1,Parents/Guardian,Junior Secondary,Better Employment Prospect,3,4,1,1,2,2,2,5,1,3,2,1,5,3,1,2,2,5,3,1,1,4,3,4,2,"NSC 507, NSC 505, NSC 515",D,2.0
+REG1173,Male,Single,Rural,Unemployed,15-20,3 and above,Self-Sponsor,Senior Secondary,Better Employment Prospect,4,2,1,1,1,2,4,4,5,5,2,5,2,1,3,2,2,3,5,1,3,1,1,2,4,"NSC 505, NSC 507, NSC 515",E,1.0
+REG1174,Female,Divorced,Rural,Unemployed,15-20,2,Organization/Scholarship,Primary School,Upgrade Qualification,5,3,3,1,3,1,3,1,5,2,4,2,4,5,5,5,4,5,4,2,1,5,4,1,5,"NSC 513, NSC 507, NSC 515",B,4.0
+REG1175,Male,Divorced,Rural,Part Time,41 and above,3 and above,Parents/Guardian,Higher Institution,Pursuit of Knowledge,2,2,5,5,3,2,4,3,4,4,5,3,1,3,4,1,2,4,4,3,2,2,1,4,5,"NSC 505, NSC 515, NSC 507",C,3.0
+REG1176,Male,Divorced,Urban,Unemployed,41 and above,1,Self-Sponsor,Primary School,Personal Fulfilment,1,1,4,3,5,5,3,2,5,2,2,2,1,1,5,3,3,4,4,4,2,2,5,3,3,"NSC 515, NSC 511, NSC 505",B,4.0
+REG1177,Male,Single,Urban,Full Time,31-40,3 and above,Parents/Guardian,Senior Secondary,Lack of Employment,2,2,1,5,2,1,2,1,3,2,5,2,3,1,2,2,3,1,1,4,5,1,3,3,5,"NSC 513, NSC 509, NSC 505",B,4.0
+REG1178,Female,Married,Rural,Full Time,15-20,2,Parents/Guardian,Senior Secondary,Better Employment Prospect,1,2,5,1,4,2,1,4,1,4,2,3,1,3,3,3,5,4,1,4,4,5,2,1,4,"NSC 515, NSC 511, NSC 503",E,1.0
+REG1179,Male,Married,Rural,Full Time,41 and above,1,Organization/Scholarship,Primary School,Lack of Employment,1,4,4,2,5,3,3,2,2,1,2,1,2,4,2,5,1,5,4,5,1,5,1,4,2,"NSC 507, NSC 503, NSC 511",C,3.0
+REG1180,Female,Divorced,Rural,Unemployed,15-20,1,Organization/Scholarship,Senior Secondary,Lack of Employment,1,3,4,4,2,2,5,4,4,3,2,2,3,1,4,2,1,3,4,5,1,1,3,3,1,"NSC 505, NSC 503, NSC 519",A,5.0
+REG1181,Female,Single,Rural,Unemployed,21-30,3 and above,Parents/Guardian,Higher Institution,Pursuit of Knowledge,4,4,4,3,4,5,1,4,1,4,4,3,3,2,2,5,1,2,5,3,5,4,5,2,4,"NSC 513, NSC 509, NSC 515",E,1.0
+REG1182,Female,Divorced,Urban,Part Time,15-20,1,Organization/Scholarship,Primary School,Personal Fulfilment,4,3,5,4,2,1,3,3,4,3,1,5,3,2,1,4,2,1,4,4,3,1,5,2,2,"NSC 503, NSC 509, NSC 511",E,1.0
+REG1183,Female,Divorced,Rural,Unemployed,15-20,3 and above,Self-Sponsor,Senior Secondary,Pursuit of Knowledge,4,5,3,5,1,2,1,2,3,4,4,1,1,3,3,5,3,5,3,3,1,4,4,1,5,"NSC 509, NSC 515, NSC 513",A,5.0
+REG1184,Female,Divorced,Rural,Part Time,21-30,2,Self-Sponsor,Junior Secondary,Lack of Employment,3,2,3,5,2,1,4,5,4,5,3,1,2,1,3,4,3,4,4,3,4,3,1,3,1,"NSC 507, NSC 509, NSC 519",C,3.0
+REG1185,Female,Single,Rural,Full Time,41 and above,3 and above,Organization/Scholarship,Junior Secondary,Better Employment Prospect,3,1,2,3,5,1,3,1,3,5,5,1,2,3,5,3,2,4,3,5,4,5,5,4,4,"NSC 513, NSC 515, NSC 505",C,3.0
+REG1186,Male,Married,Rural,Unemployed,31-40,3 and above,Parents/Guardian,Higher Institution,Upgrade Qualification,2,1,5,3,2,4,3,5,3,5,1,1,3,2,5,2,3,1,4,5,5,3,1,5,1,"NSC 503, NSC 505, NSC 509",B,4.0
+REG1187,Male,Divorced,Rural,Unemployed,15-20,3 and above,Organization/Scholarship,Higher Institution,Upgrade Qualification,1,2,3,3,4,1,4,5,4,2,4,1,1,1,2,1,2,2,3,1,4,3,4,1,4,"NSC 505, NSC 509, NSC 519",A,5.0
+REG1188,Male,Married,Rural,Part Time,41 and above,2,Parents/Guardian,Primary School,Better Employment Prospect,5,4,3,3,1,5,2,1,5,2,3,1,4,1,4,3,1,1,1,5,5,5,5,1,3,"NSC 511, NSC 513, NSC 505",A,5.0
+REG1189,Female,Married,Urban,Full Time,31-40,3 and above,Parents/Guardian,Junior Secondary,Pursuit of Knowledge,4,2,4,1,1,1,2,3,2,5,2,4,4,5,5,1,3,5,1,4,3,2,5,4,3,"NSC 501, NSC 507, NSC 503",F,0.0
+REG1190,Female,Married,Rural,Part Time,15-20,3 and above,Organization/Scholarship,Senior Secondary,Pursuit of Knowledge,1,5,3,5,2,4,1,5,4,1,3,4,5,2,1,5,1,5,3,4,1,4,3,1,3,"NSC 515, NSC 519, NSC 511",E,1.0
+REG1191,Male,Divorced,Urban,Full Time,15-20,3 and above,Self-Sponsor,Higher Institution,Personal Fulfilment,2,4,2,1,3,1,4,3,2,5,2,4,4,5,2,2,2,5,5,3,4,2,2,5,3,"NSC 505, NSC 509, NSC 515",B,4.0
+REG1192,Male,Single,Rural,Unemployed,31-40,3 and above,Self-Sponsor,Junior Secondary,Better Employment Prospect,2,5,5,4,5,2,3,1,1,1,5,5,5,5,4,3,4,1,5,3,5,2,1,5,3,"NSC 511, NSC 505, NSC 501",C,3.0
+REG1193,Female,Single,Rural,Full Time,41 and above,2,Organization/Scholarship,Primary School,Lack of Employment,3,1,1,1,1,5,3,3,3,2,3,4,5,4,2,3,1,4,2,4,4,2,5,4,4,"NSC 505, NSC 511, NSC 513",C,3.0
+REG1194,Female,Divorced,Rural,Part Time,31-40,1,Self-Sponsor,Junior Secondary,Pursuit of Knowledge,4,1,5,4,3,4,4,5,1,5,4,4,2,2,1,4,3,4,4,5,4,1,1,4,1,"NSC 513, NSC 511, NSC 509",E,1.0
+REG1195,Male,Single,Rural,Full Time,21-30,3 and above,Organization/Scholarship,Higher Institution,Lack of Employment,5,3,2,2,3,3,3,1,2,1,2,4,2,3,2,5,1,4,4,5,5,5,4,4,2,"NSC 509, NSC 507, NSC 505",D,2.0
+REG1196,Female,Married,Urban,Full Time,21-30,1,Self-Sponsor,Senior Secondary,Personal Fulfilment,3,5,5,1,4,4,3,4,3,1,3,3,1,2,4,1,1,3,3,1,5,2,1,1,1,"NSC 501, NSC 511, NSC 507",F,0.0
+REG1197,Male,Divorced,Urban,Unemployed,21-30,2,Self-Sponsor,Higher Institution,Pursuit of Knowledge,1,5,1,5,4,2,3,1,3,1,2,4,3,5,5,5,5,3,2,5,1,1,4,1,3,"NSC 509, NSC 519, NSC 511",C,3.0
+REG1198,Female,Divorced,Urban,Unemployed,41 and above,2,Parents/Guardian,Primary School,Upgrade Qualification,2,4,3,4,2,3,4,1,3,3,1,2,1,5,1,2,5,2,3,3,3,3,1,4,2,"NSC 515, NSC 501, NSC 505",A,5.0
+REG1199,Male,Single,Rural,Unemployed,31-40,3 and above,Self-Sponsor,Senior Secondary,Upgrade Qualification,3,3,1,4,5,4,2,3,4,4,4,3,4,1,2,4,3,2,5,4,3,5,2,2,4,"NSC 507, NSC 501, NSC 511",B,4.0
+REG1200,Male,Divorced,Urban,Part Time,31-40,1,Self-Sponsor,Senior Secondary,Pursuit of Knowledge,1,4,1,1,2,1,2,4,4,3,4,5,2,1,2,5,3,4,2,5,3,4,5,5,2,"NSC 503, NSC 511, NSC 513",C,3.0
+REG1201,Female,Single,Rural,Unemployed,41 and above,1,Self-Sponsor,Higher Institution,Better Employment Prospect,3,4,3,2,3,4,5,1,5,3,2,4,4,4,3,4,1,5,1,5,4,2,5,4,2,"NSC 501, NSC 515, NSC 507",B,4.0
+REG1202,Male,Divorced,Urban,Unemployed,41 and above,3 and above,Organization/Scholarship,Senior Secondary,Lack of Employment,3,2,1,5,1,5,3,1,1,3,5,3,1,4,4,5,5,1,2,3,1,3,3,1,2,"NSC 511, NSC 513, NSC 505",D,2.0
+REG1203,Male,Divorced,Urban,Part Time,15-20,3 and above,Parents/Guardian,Junior Secondary,Lack of Employment,4,4,4,5,1,5,2,2,1,5,4,2,2,2,1,2,4,4,5,1,3,1,4,5,4,"NSC 519, NSC 501, NSC 515",C,3.0
+REG1204,Male,Single,Rural,Unemployed,31-40,3 and above,Parents/Guardian,Junior Secondary,Upgrade Qualification,1,3,2,3,2,3,2,5,5,2,5,2,1,1,3,2,1,2,3,2,2,5,4,4,2,"NSC 515, NSC 511, NSC 513",B,4.0
+REG1205,Female,Married,Urban,Unemployed,21-30,3 and above,Self-Sponsor,Junior Secondary,Better Employment Prospect,5,4,2,3,4,2,3,3,3,2,3,1,2,4,1,3,5,4,1,3,1,3,4,1,1,"NSC 515, NSC 511, NSC 519",E,1.0
+REG1206,Female,Married,Rural,Unemployed,41 and above,3 and above,Organization/Scholarship,Junior Secondary,Upgrade Qualification,1,3,4,1,5,4,1,3,5,3,3,1,4,1,5,3,1,2,1,2,3,2,2,4,1,"NSC 507, NSC 513, NSC 505",D,2.0
+REG1207,Female,Married,Urban,Unemployed,21-30,2,Organization/Scholarship,Primary School,Upgrade Qualification,3,1,3,5,2,1,4,2,5,3,4,2,3,2,2,2,3,1,3,3,4,5,4,5,5,"NSC 503, NSC 507, NSC 511",F,0.0
+REG1208,Male,Divorced,Rural,Full Time,15-20,3 and above,Parents/Guardian,Higher Institution,Upgrade Qualification,3,5,2,5,2,5,2,1,5,1,4,5,2,2,3,3,3,1,5,1,5,2,2,1,1,"NSC 507, NSC 501, NSC 503",E,1.0
+REG1209,Male,Single,Urban,Part Time,31-40,2,Self-Sponsor,Primary School,Lack of Employment,3,2,3,5,1,5,5,5,3,2,1,4,1,4,1,3,4,5,3,1,1,3,2,4,5,"NSC 515, NSC 501, NSC 519",D,2.0
+REG1210,Female,Married,Urban,Part Time,31-40,2,Parents/Guardian,Higher Institution,Upgrade Qualification,2,3,2,4,2,5,3,4,4,4,1,4,2,1,1,5,5,2,2,4,5,5,5,4,5,"NSC 503, NSC 515, NSC 511",A,5.0
+REG1211,Male,Single,Urban,Part Time,21-30,1,Parents/Guardian,Primary School,Pursuit of Knowledge,2,2,5,2,2,3,2,5,1,5,1,2,2,4,3,5,3,2,4,5,2,5,3,3,3,"NSC 515, NSC 519, NSC 507",C,3.0
+REG1212,Male,Married,Rural,Full Time,21-30,3 and above,Parents/Guardian,Senior Secondary,Personal Fulfilment,1,1,2,5,1,1,4,3,2,2,3,2,3,2,2,2,1,5,3,1,3,1,4,5,3,"NSC 503, NSC 505, NSC 519",E,1.0
+REG1213,Female,Married,Rural,Unemployed,21-30,3 and above,Self-Sponsor,Junior Secondary,Upgrade Qualification,3,5,4,1,3,2,5,4,5,1,2,4,3,4,4,3,1,3,5,3,1,4,3,4,1,"NSC 503, NSC 507, NSC 509",C,3.0
+REG1214,Male,Married,Rural,Unemployed,21-30,3 and above,Parents/Guardian,Primary School,Lack of Employment,3,2,3,3,4,2,3,2,1,3,4,2,5,3,1,1,3,3,3,5,1,3,3,3,5,"NSC 513, NSC 503, NSC 507",E,1.0
+REG1215,Female,Married,Rural,Unemployed,21-30,1,Parents/Guardian,Primary School,Pursuit of Knowledge,1,1,3,5,2,3,4,5,4,4,5,3,1,1,2,1,3,1,3,2,1,3,3,2,3,"NSC 519, NSC 507, NSC 511",A,5.0
+REG1216,Female,Married,Urban,Part Time,31-40,2,Parents/Guardian,Primary School,Lack of Employment,3,5,3,1,3,1,1,5,2,2,4,3,4,1,4,5,2,4,4,3,5,3,1,2,2,"NSC 501, NSC 509, NSC 503",E,1.0
+REG1217,Male,Single,Rural,Unemployed,21-30,3 and above,Self-Sponsor,Primary School,Lack of Employment,5,5,1,1,5,4,3,3,3,1,1,3,4,3,1,1,1,5,5,5,4,2,5,1,4,"NSC 507, NSC 513, NSC 509",D,2.0
+REG1218,Male,Single,Rural,Part Time,31-40,3 and above,Organization/Scholarship,Junior Secondary,Better Employment Prospect,4,1,3,1,5,5,3,1,3,4,2,5,1,3,3,3,3,4,5,1,3,3,4,2,3,"NSC 519, NSC 513, NSC 503",E,1.0
+REG1219,Female,Divorced,Urban,Unemployed,21-30,2,Self-Sponsor,Junior Secondary,Upgrade Qualification,1,1,5,5,2,5,2,3,3,3,1,2,2,5,5,2,3,2,5,5,3,5,4,1,4,"NSC 515, NSC 507, NSC 511",C,3.0
+REG1220,Female,Divorced,Urban,Part Time,21-30,3 and above,Organization/Scholarship,Senior Secondary,Upgrade Qualification,2,2,4,1,2,4,5,3,4,2,1,1,1,2,4,5,1,3,5,5,4,4,2,1,3,"NSC 503, NSC 507, NSC 505",B,4.0
+REG1221,Female,Divorced,Urban,Part Time,31-40,3 and above,Parents/Guardian,Senior Secondary,Upgrade Qualification,3,3,4,1,1,3,4,1,2,3,2,4,1,2,3,4,3,1,1,1,2,3,2,5,4,"NSC 519, NSC 507, NSC 505",B,4.0
+REG1222,Male,Married,Rural,Part Time,21-30,2,Self-Sponsor,Primary School,Upgrade Qualification,1,5,4,1,5,2,3,5,5,1,5,3,3,4,5,2,4,1,4,1,5,2,2,3,4,"NSC 515, NSC 513, NSC 511",A,5.0
+REG1223,Female,Married,Urban,Unemployed,15-20,3 and above,Organization/Scholarship,Junior Secondary,Upgrade Qualification,4,5,2,5,3,1,1,1,1,5,2,1,2,1,3,4,5,5,2,4,2,3,4,3,2,"NSC 503, NSC 515, NSC 505",F,0.0
+REG1224,Female,Single,Urban,Full Time,31-40,1,Parents/Guardian,Primary School,Upgrade Qualification,5,2,4,1,5,2,2,1,4,5,1,3,3,3,4,5,1,3,3,5,5,3,1,3,1,"NSC 515, NSC 501, NSC 519",C,3.0
+REG1225,Female,Divorced,Urban,Unemployed,21-30,1,Parents/Guardian,Primary School,Lack of Employment,2,3,2,4,5,4,4,2,2,5,4,1,5,2,4,1,3,2,4,5,3,5,4,5,3,"NSC 519, NSC 505, NSC 515",F,0.0
+REG1226,Female,Divorced,Urban,Full Time,21-30,3 and above,Parents/Guardian,Primary School,Better Employment Prospect,1,5,4,4,3,2,5,2,1,4,3,2,2,2,4,3,4,5,4,4,4,3,5,1,1,"NSC 513, NSC 505, NSC 515",F,0.0
+REG1227,Female,Divorced,Urban,Full Time,21-30,3 and above,Parents/Guardian,Senior Secondary,Personal Fulfilment,5,5,4,2,1,4,4,4,3,3,4,1,1,4,2,1,3,3,4,5,2,5,2,4,1,"NSC 513, NSC 503, NSC 509",F,0.0
+REG1228,Female,Single,Rural,Unemployed,41 and above,2,Organization/Scholarship,Primary School,Lack of Employment,4,3,1,2,2,3,5,4,1,5,2,2,4,5,5,2,4,2,5,5,4,2,1,5,4,"NSC 503, NSC 515, NSC 509",A,5.0
+REG1229,Male,Married,Rural,Full Time,41 and above,3 and above,Parents/Guardian,Primary School,Upgrade Qualification,1,2,5,1,3,4,4,5,1,5,5,2,3,5,2,1,4,5,3,5,2,2,5,4,2,"NSC 505, NSC 511, NSC 501",C,3.0
+REG1230,Male,Divorced,Urban,Unemployed,21-30,2,Parents/Guardian,Higher Institution,Pursuit of Knowledge,2,5,5,4,2,3,1,1,5,1,3,2,2,3,1,1,4,5,1,4,4,3,5,4,2,"NSC 511, NSC 509, NSC 505",E,1.0
+REG1231,Female,Single,Urban,Unemployed,21-30,3 and above,Self-Sponsor,Senior Secondary,Personal Fulfilment,3,2,2,5,2,2,2,2,1,4,5,1,1,1,5,2,5,4,2,2,2,1,1,3,4,"NSC 513, NSC 515, NSC 519",F,0.0
+REG1232,Female,Married,Rural,Full Time,31-40,1,Self-Sponsor,Higher Institution,Lack of Employment,3,3,3,5,3,4,4,5,4,3,3,4,1,3,3,1,5,4,4,3,5,2,5,5,1,"NSC 511, NSC 513, NSC 509",E,1.0
+REG1233,Female,Divorced,Rural,Full Time,31-40,1,Self-Sponsor,Senior Secondary,Better Employment Prospect,5,1,3,3,5,2,4,5,2,2,4,4,2,2,4,5,2,1,2,2,2,2,5,2,5,"NSC 503, NSC 501, NSC 511",E,1.0
+REG1234,Female,Divorced,Urban,Part Time,31-40,3 and above,Parents/Guardian,Primary School,Upgrade Qualification,5,5,5,5,1,3,4,5,3,2,3,3,1,2,5,5,4,2,4,1,5,3,5,1,4,"NSC 507, NSC 503, NSC 519",B,4.0
+REG1235,Male,Divorced,Rural,Full Time,21-30,3 and above,Self-Sponsor,Higher Institution,Pursuit of Knowledge,5,5,2,3,3,5,2,2,5,3,1,3,3,1,2,2,5,1,2,2,1,4,3,4,5,"NSC 507, NSC 515, NSC 519",C,3.0
+REG1236,Female,Divorced,Urban,Part Time,21-30,2,Organization/Scholarship,Primary School,Upgrade Qualification,2,3,4,3,2,4,4,3,5,3,3,4,2,4,5,3,3,2,1,2,1,2,1,2,5,"NSC 507, NSC 509, NSC 503",F,0.0
+REG1237,Male,Divorced,Rural,Part Time,41 and above,1,Parents/Guardian,Higher Institution,Lack of Employment,4,3,5,2,5,3,4,5,5,3,3,5,4,1,3,4,4,4,4,1,1,2,5,3,2,"NSC 501, NSC 505, NSC 507",E,1.0
+REG1238,Female,Single,Urban,Unemployed,41 and above,3 and above,Organization/Scholarship,Higher Institution,Lack of Employment,3,4,4,5,1,3,5,5,5,5,4,3,1,5,1,2,5,2,3,2,4,1,3,1,5,"NSC 513, NSC 519, NSC 509",B,4.0
+REG1239,Female,Divorced,Urban,Part Time,21-30,3 and above,Organization/Scholarship,Higher Institution,Pursuit of Knowledge,3,3,3,2,3,1,3,2,3,3,3,2,4,2,2,3,3,3,4,1,1,1,3,3,5,"NSC 501, NSC 505, NSC 507",F,0.0

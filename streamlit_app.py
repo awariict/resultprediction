@@ -192,7 +192,7 @@ with tabs[0]:
                     st.session_state['role']='admin'
                     st.session_state['username']=au
                     st.success('Logged in as admin')
-                    st.experimental_rerun()
+                    st.rerun()
                 else:
                     st.error('Invalid credentials')
 
@@ -337,7 +337,7 @@ with tabs[1]:
             if ok and role=='student':
                 st.session_state['role']='student'
                 st.session_state['username']=sreg
-                st.experimental_rerun()
+                st.rerun()
             else:
                 st.error('Invalid credentials')
 
@@ -346,4 +346,5 @@ with tabs[2]:
     st.header('About & Help')
     st.write('This application predicts student grade categories (low / average / high) using a soft-voting ensemble of KNN and Naive Bayes. Admins can register students, upload CSVs, train models, make predictions, and view advice history & student replies. Students can login with their registration number to view advice and reply.')
     st.write('Pass/Fail summary: Pass = average/high, Fail = low')
+
 

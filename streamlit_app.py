@@ -27,7 +27,6 @@ MODEL_PATH = "ensemble_model.joblib"
 USERS_CSV = "users_backup.csv"
 HISTORY_CSV = "advice_history_backup.csv"
 
-
 # ----------------- Setup -----------------
 client = MongoClient(MONGO_URI)
 db = client[DB_NAME]
@@ -163,6 +162,10 @@ def make_advice(category: str) -> str:
 st.set_page_config(page_title='Result Prediction System', layout='wide')
 st.title('Result Prediction & Advice System')
 
+# preserve uploaded data across reruns
+if 'uploaded_df' not in st.session_state:
+    st.session_state['uploaded_df'] = None
+
 tabs = st.tabs(["Admin Portal","Student Portal","About & Help"])
 
 # --- ADMIN PORTAL ---
@@ -171,123 +174,175 @@ with tabs[0]:
     col1, col2 = st.columns([1,2])
     with col1:
         st.subheader('Admin Access')
-        admin_action = st.selectbox('Action', ['Login','Register Admin'])
+        admin_action = st.selectbox('Action', ['Login','Register Admin'], key='admin_action_select')
         if admin_action == 'Register Admin':
-            au = st.text_input('Admin username')
-            apw = st.text_input('Password', type='password')
-            if st.button('Register'):
+            au = st.text_input('Admin username', key='admin_register_username')
+            apw = st.text_input('Password', type='password', key='admin_register_password')
+            if st.button('Register', key='admin_register_btn'):
                 ok,msg = register_admin(au,apw)
-                st.success(msg) if ok else st.error(msg)
+                if ok:
+                    st.success(msg)
+                    st.rerun()
+                else:
+                    st.error(msg)
         else:
-            au = st.text_input('Admin username (login)')
-            apw = st.text_input('Password (login)', type='password')
-            if st.button('Login'):
+            au = st.text_input('Admin username (login)', key='admin_login_username')
+            apw = st.text_input('Password (login)', type='password', key='admin_login_password')
+            if st.button('Login', key='admin_login_btn'):
                 ok,role = authenticate(au,apw)
                 if ok and role == 'admin':
                     st.session_state['role']='admin'
                     st.session_state['username']=au
                     st.success('Logged in as admin')
+                    st.rerun()
                 else:
                     st.error('Invalid credentials')
 
     with col2:
         if 'role' in st.session_state and st.session_state['role']=='admin':
             st.subheader('Operations')
-            action = st.selectbox('Choose operation', ['Register Student','Single Questionnaire','Upload CSV & Batch Predict','View History','View Student Replies'])
+            action = st.selectbox('Choose operation', ['Register Student','Single Questionnaire','Upload CSV & Batch Predict','View History','View Student Replies'], key='admin_ops_select')
 
             if action == 'Register Student':
-                reg = st.text_input('Student Reg. Number')
-                if st.button('Create Student'):
+                reg = st.text_input('Student Reg. Number', key='admin_create_student_reg')
+                if st.button('Create Student', key='admin_create_student_btn'):
                     if reg:
                         ok,msg = register_student(str(reg))
-                        st.success(msg + ' (password = reg number)') if ok else st.error(msg)
+                        if ok:
+                            st.success(msg + ' (password = reg number)')
+                        else:
+                            st.error(msg)
                     else:
                         st.error('Enter reg number')
 
             elif action == 'Single Questionnaire':
                 if os.path.exists(MODEL_PATH):
-                    meta = joblib.load(MODEL_PATH)
-                    features = meta['features']
-                    inputs = {f: st.text_input(f) for f in features}
-                    if st.button('Predict & Save'):
-                        try:
-                            df_row = pd.DataFrame([inputs])
-                            preds, _ = predict_with_existing_model(df_row)
-                            cat = preds[0]
-                            advice = make_advice(cat)
-                            st.success(f'Category: {cat}')
-                            st.write(advice)
-                            rec = {'reg_number': '', 'predicted_category': cat, 'advice': advice, 'admin': st.session_state['username'], 'timestamp': datetime.utcnow()}
-                            history_col.insert_one(rec)
-                            hdf = pd.read_csv(HISTORY_CSV)
-                            hdf = pd.concat([hdf, pd.DataFrame([rec])], ignore_index=True)
-                            hdf.to_csv(HISTORY_CSV, index=False)
-                        except Exception as e:
-                            st.error(f'Prediction failed: {e}')
+                    try:
+                        meta = joblib.load(MODEL_PATH)
+                        features = meta['features']
+                        inputs = {}
+                        for i, f in enumerate(features):
+                            inputs[f] = st.text_input(f, key=f"admin_single_in_{i}")
+                        if st.button('Predict & Save', key='admin_single_predict_btn'):
+                            try:
+                                df_row = pd.DataFrame([inputs])
+                                preds, _ = predict_with_existing_model(df_row)
+                                cat = preds[0]
+                                advice = make_advice(cat)
+                                st.success(f'Category: {cat}')
+                                st.write(advice)
+                                rec = {'reg_number': '', 'predicted_category': cat, 'advice': advice, 'admin': st.session_state.get('username',''), 'timestamp': datetime.utcnow()}
+                                history_col.insert_one(rec)
+                                hdf = pd.read_csv(HISTORY_CSV)
+                                hdf = pd.concat([hdf, pd.DataFrame([rec])], ignore_index=True)
+                                hdf.to_csv(HISTORY_CSV, index=False)
+                            except Exception as e:
+                                st.error(f'Prediction failed: {e}')
+                    except Exception as e:
+                        st.error(f'Could not load model: {e}')
                 else:
                     st.info('No trained model found. Upload CSV to train.')
 
             elif action == 'Upload CSV & Batch Predict':
-                uploaded = st.file_uploader('Upload students CSV', type=['csv'])
-                reg_col_hint = st.text_input('Registration column name (optional)')
-                if uploaded is not None and st.button('Train & Predict'):
+                uploaded = st.file_uploader('Upload students CSV', type=['csv'], key='admin_upload_csv')
+                reg_col_hint = st.text_input('Registration column name (optional)', key='admin_reg_col_hint')
+
+                # load and persist the uploaded CSV
+                if uploaded is not None and st.session_state['uploaded_df'] is None:
                     try:
-                        df_uploaded = pd.read_csv(uploaded)
-                        meta, train_df = build_and_train_model(df_uploaded, reg_col_hint)
-
-                        # drop score column before prediction
-                        if meta['score_col'] in df_uploaded.columns:
-                            df_uploaded = df_uploaded.drop(columns=[meta['score_col']])
-
-                        preds, _ = predict_with_existing_model(df_uploaded)
-                        df_uploaded['predicted_category'] = preds
-                        df_uploaded['advice'] = df_uploaded['predicted_category'].apply(make_advice)
-                        reg_col = next((c for c in [reg_col_hint,'Registration Number','reg_number','RegNo','Reg_Number'] if c in df_uploaded.columns), None)
-                        created, pass_count, fail_count, records = 0,0,0,[]
-                        for _,row in df_uploaded.iterrows():
-                            regval = str(row.get(reg_col,'')) if reg_col else ''
-                            if regval and not users_col.find_one({'username':regval}):
-                                users_col.insert_one({'username':regval,'password_hash':hash_password(regval),'role':'student','reg_number':regval})
-                                udf = pd.read_csv(USERS_CSV)
-                                udf = pd.concat([udf, pd.DataFrame([{'username':regval,'password_hash':hash_password(regval),'role':'student','reg_number':regval}])], ignore_index=True)
-                                udf.to_csv(USERS_CSV,index=False)
-                                created += 1
-                            rec = {'reg_number': regval, 'predicted_category': row['predicted_category'], 'advice': row['advice'], 'admin': st.session_state['username'], 'timestamp': datetime.utcnow()}
-                            records.append(rec)
-                            pass_count += 1 if row['predicted_category'] in ['average','high'] else 0
-                            fail_count += 1 if row['predicted_category'] == 'low' else 0
-                        if records:
-                            history_col.insert_many(records)
-                            hdf = pd.read_csv(HISTORY_CSV)
-                            hdf = pd.concat([hdf, pd.DataFrame(records)], ignore_index=True)
-                            hdf.to_csv(HISTORY_CSV, index=False)
-                        st.success(f'Bulk prediction done. Created {created} students.')
-                        st.info(f'Pass: {pass_count} | Fail: {fail_count}')
-                        st.dataframe(df_uploaded.head(200))
-                        st.download_button('Download predictions CSV', df_uploaded.to_csv(index=False).encode('utf-8'), file_name='predictions.csv')
+                        st.session_state['uploaded_df'] = pd.read_csv(uploaded)
+                        st.success(f"CSV loaded: {getattr(uploaded, 'name', 'uploaded file')} ({st.session_state['uploaded_df'].shape[0]} rows)")
                     except Exception as e:
-                        st.error(f'Error during training/prediction: {e}')
+                        st.error(f"Could not read uploaded CSV: {e}")
+                        st.session_state['uploaded_df'] = None
+
+                if st.button('Train & Predict', key='admin_train_predict_btn'):
+                    if st.session_state['uploaded_df'] is None:
+                        st.error("Please upload a valid CSV first.")
+                    else:
+                        try:
+                            df_uploaded = st.session_state['uploaded_df'].copy()
+
+                            # First, build and train the model using the uploaded raw df (this expects a score column)
+                            meta, train_df = build_and_train_model(df_uploaded, reg_col_hint)
+
+                            # Debug: indicate which column was used as score
+                            st.info(f"Training used score column: {meta.get('score_col')} (scale: {meta.get('scale')})")
+
+                            # Drop the score column from the dataframe before predicting (so features align)
+                            if meta['score_col'] in df_uploaded.columns:
+                                df_pred = df_uploaded.drop(columns=[meta['score_col']])
+                            else:
+                                df_pred = df_uploaded.copy()
+
+                            # Predict with the trained model
+                            preds, _ = predict_with_existing_model(df_pred)
+                            df_pred['predicted_category'] = preds
+                            df_pred['advice'] = df_pred['predicted_category'].apply(make_advice)
+
+                            # If reg_col exists in original uploaded df, try to use it
+                            reg_col = next((c for c in [reg_col_hint,'Registration Number','reg_number','RegNo','Reg_Number'] if c in df_uploaded.columns), None)
+
+                            created, pass_count, fail_count, records = 0,0,0,[]
+                            for idx, row in df_pred.iterrows():
+                                regval = str(df_uploaded.iloc[idx].get(reg_col,'')) if reg_col else ''
+                                if regval and not users_col.find_one({'username':regval}):
+                                    users_col.insert_one({'username':regval,'password_hash':hash_password(regval),'role':'student','reg_number':regval})
+                                    udf = pd.read_csv(USERS_CSV)
+                                    udf = pd.concat([udf, pd.DataFrame([{'username':regval,'password_hash':hash_password(regval),'role':'student','reg_number':regval}])], ignore_index=True)
+                                    udf.to_csv(USERS_CSV,index=False)
+                                    created += 1
+                                rec = {'reg_number': regval, 'predicted_category': row['predicted_category'], 'advice': row['advice'], 'admin': st.session_state.get('username',''), 'timestamp': datetime.utcnow()}
+                                records.append(rec)
+                                pass_count += 1 if row['predicted_category'] in ['average','high'] else 0
+                                fail_count += 1 if row['predicted_category'] == 'low' else 0
+
+                            # store to Mongo and CSV history
+                            if records:
+                                history_col.insert_many(records)
+                                hdf = pd.read_csv(HISTORY_CSV)
+                                hdf = pd.concat([hdf, pd.DataFrame(records)], ignore_index=True)
+                                hdf.to_csv(HISTORY_CSV, index=False)
+
+                            st.success(f'Bulk prediction done. Created {created} students.')
+                            st.info(f'Pass: {pass_count} | Fail: {fail_count}')
+                            st.dataframe(df_pred.head(200))
+
+                            # provide download
+                            st.download_button('Download predictions CSV', df_pred.to_csv(index=False).encode('utf-8'), file_name='predictions.csv', key='admin_download_preds')
+
+                        except Exception as e:
+                            st.error(f'Error during training/prediction: {e}')
 
             elif action == 'View History':
-                q = st.text_input('Filter by reg number (optional)')
-                cursor = history_col.find({'reg_number': str(q)}) if q else history_col.find()
-                cursor = cursor.sort('timestamp', -1).limit(500)
-                recs = list(cursor)
-                if recs:
-                    df_hist = pd.DataFrame(recs)
-                    st.dataframe(df_hist[['reg_number','predicted_category','advice','admin','timestamp']])
-                    st.download_button('Download history CSV', df_hist.to_csv(index=False).encode('utf-8'), file_name='advice_history.csv')
-                else:
-                    st.info('No history records found.')
+                q = st.text_input('Filter by reg number (optional)', key='admin_view_history_filter')
+                try:
+                    cursor = history_col.find({'reg_number': str(q)}) if q else history_col.find()
+                    cursor = cursor.sort('timestamp', -1).limit(500)
+                    recs = list(cursor)
+                    if recs:
+                        df_hist = pd.DataFrame(recs)
+                        # safe subset of fields
+                        cols = [c for c in ['reg_number','predicted_category','advice','admin','timestamp'] if c in df_hist.columns]
+                        st.dataframe(df_hist[cols])
+                        st.download_button('Download history CSV', df_hist.to_csv(index=False).encode('utf-8'), file_name='advice_history.csv', key='admin_download_history')
+                    else:
+                        st.info('No history records found.')
+                except Exception as e:
+                    st.error(f'Error fetching history: {e}')
 
             elif action == 'View Student Replies':
-                cursor = history_col.find({'advice': {'$regex':'STUDENT_REPLY'}}).sort('timestamp', -1).limit(200)
-                recs = list(cursor)
-                if recs:
-                    df_rep = pd.DataFrame(recs)
-                    st.dataframe(df_rep[['reg_number','advice','timestamp']])
-                else:
-                    st.info('No student replies yet.')
+                try:
+                    cursor = history_col.find({'advice': {'$regex':'STUDENT_REPLY'}}).sort('timestamp', -1).limit(200)
+                    recs = list(cursor)
+                    if recs:
+                        df_rep = pd.DataFrame(recs)
+                        cols = [c for c in ['reg_number','advice','timestamp'] if c in df_rep.columns]
+                        st.dataframe(df_rep[cols])
+                    else:
+                        st.info('No student replies yet.')
+                except Exception as e:
+                    st.error(f'Error fetching replies: {e}')
 
 # --- STUDENT PORTAL ---
 with tabs[1]:
@@ -295,28 +350,36 @@ with tabs[1]:
     if 'role' in st.session_state and st.session_state['role']=='student':
         reg = st.session_state.get('username')
         st.subheader(f'Welcome {reg}')
-        cursor = history_col.find({'reg_number': str(reg)}).sort('timestamp', -1).limit(100)
-        recs = list(cursor)
-        if recs:
-            df_recs = pd.DataFrame(recs)
-            st.dataframe(df_recs[['predicted_category','advice','admin','timestamp']])
-        else:
-            st.info('No advice yet.')
-        reply = st.text_area('Reply to Admin')
-        if st.button('Send Reply'):
+        try:
+            cursor = history_col.find({'reg_number': str(reg)}).sort('timestamp', -1).limit(100)
+            recs = list(cursor)
+            if recs:
+                df_recs = pd.DataFrame(recs)
+                cols = [c for c in ['predicted_category','advice','admin','timestamp'] if c in df_recs.columns]
+                st.dataframe(df_recs[cols])
+            else:
+                st.info('No advice yet.')
+        except Exception as e:
+            st.error(f'Error loading your advice history: {e}')
+
+        reply = st.text_area('Reply to Admin', key='student_reply_box')
+        if st.button('Send Reply', key='student_send_reply_btn'):
             if reply.strip():
-                rec = {'reg_number': reg, 'predicted_category':'', 'advice': f'STUDENT_REPLY: {reply}', 'admin': reg, 'timestamp': datetime.utcnow()}
-                history_col.insert_one(rec)
-                hdf = pd.read_csv(HISTORY_CSV)
-                hdf = pd.concat([hdf, pd.DataFrame([rec])], ignore_index=True)
-                hdf.to_csv(HISTORY_CSV, index=False)
-                st.success('Reply saved')
+                try:
+                    rec = {'reg_number': reg, 'predicted_category':'', 'advice': f'STUDENT_REPLY: {reply}', 'admin': reg, 'timestamp': datetime.utcnow()}
+                    history_col.insert_one(rec)
+                    hdf = pd.read_csv(HISTORY_CSV)
+                    hdf = pd.concat([hdf, pd.DataFrame([rec])], ignore_index=True)
+                    hdf.to_csv(HISTORY_CSV, index=False)
+                    st.success('Reply saved')
+                except Exception as e:
+                    st.error(f'Failed to save reply: {e}')
             else:
                 st.error('Empty reply')
     else:
-        sreg = st.text_input('Registration number')
-        spw = st.text_input('Password (use reg number)', type='password')
-        if st.button('Login as Student'):
+        sreg = st.text_input('Registration number', key='student_login_reg')
+        spw = st.text_input('Password (use reg number)', type='password', key='student_login_password')
+        if st.button('Login as Student', key='student_login_btn'):
             ok, role = authenticate(sreg, spw)
             if ok and role=='student':
                 st.session_state['role']='student'

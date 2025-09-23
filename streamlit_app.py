@@ -176,8 +176,11 @@ with tabs[0]:
             au = st.text_input('Admin username')
             apw = st.text_input('Password', type='password')
             if st.button('Register'):
-                ok,msg = register_admin(au,apw)
-                st.success(msg) if ok else st.error(msg)
+                ok, msg = register_admin(au, apw)
+                if ok:
+                    st.success(msg)
+                else:
+                    st.error(msg)
         else:
             au = st.text_input('Admin username (login)')
             apw = st.text_input('Password (login)', type='password')
@@ -199,129 +202,85 @@ with tabs[0]:
                 reg = st.text_input('Student Reg. Number')
                 if st.button('Create Student'):
                     if reg:
-                        ok,msg = register_student(str(reg))
-                        st.success(msg + ' (password = reg number)') if ok else st.error(msg)
+                        ok, msg = register_student(str(reg))
+                        if ok:
+                            st.success(msg + ' (password = reg number)')
+                        else:
+                            st.error(msg)
                     else:
                         st.error('Enter reg number')
 
             elif action == 'Single Questionnaire':
-                if os.path.exists(MODEL_PATH):
-                    meta = joblib.load(MODEL_PATH)
-                    features = meta['features']
-                    inputs = {f: st.text_input(f) for f in features}
-                    if st.button('Predict & Save'):
-                        try:
-                            df_row = pd.DataFrame([inputs])
-                            preds, _ = predict_with_existing_model(df_row)
-                            cat = preds[0]
-                            advice = make_advice(cat)
-                            st.success(f'Category: {cat}')
-                            st.write(advice)
-                            rec = {'reg_number': '', 'predicted_category': cat, 'advice': advice, 'admin': st.session_state['username'], 'timestamp': datetime.utcnow()}
-                            history_col.insert_one(rec)
-                            hdf = pd.read_csv(HISTORY_CSV)
-                            hdf = pd.concat([hdf, pd.DataFrame([rec])], ignore_index=True)
-                            hdf.to_csv(HISTORY_CSV, index=False)
-                        except Exception as e:
-                            st.error(f'Prediction failed: {e}')
-                else:
-                    st.info('No trained model found. Upload CSV to train.')
+                st.write("Enter features for prediction (example input, adapt as needed)")
+                feat1 = st.number_input("Feature 1", value=0.0)
+                feat2 = st.number_input("Feature 2", value=0.0)
+                df_in = pd.DataFrame([{"feat1":feat1,"feat2":feat2}])
+                if st.button("Predict Single"):
+                    try:
+                        preds, meta = predict_with_existing_model(df_in)
+                        pred, advice = preds[0], make_advice(preds[0])
+                        st.success(f"Predicted Category: {pred}")
+                        st.info(f"Advice: {advice}")
+                    except Exception as e:
+                        st.error(f'Prediction failed: {e}')
 
             elif action == 'Upload CSV & Batch Predict':
-                uploaded = st.file_uploader('Upload students CSV', type=['csv'])
-                reg_col_hint = st.text_input('Registration column name (optional)')
-                if uploaded is not None and st.button('Train & Predict'):
-                    try:
-                        df_uploaded = pd.read_csv(uploaded)
-                        meta, train_df = build_and_train_model(df_uploaded, reg_col_hint)
-                        preds, _ = predict_with_existing_model(df_uploaded)
-                        df_uploaded['predicted_category'] = preds
-                        df_uploaded['advice'] = df_uploaded['predicted_category'].apply(make_advice)
-                        reg_col = next((c for c in [reg_col_hint,'Registration Number','reg_number','RegNo','Reg_Number'] if c in df_uploaded.columns), None)
-                        created, pass_count, fail_count, records = 0,0,0,[]
-                        for _,row in df_uploaded.iterrows():
-                            regval = str(row.get(reg_col,'')) if reg_col else ''
-                            if regval and not users_col.find_one({'username':regval}):
-                                users_col.insert_one({'username':regval,'password_hash':hash_password(regval),'role':'student','reg_number':regval})
-                                udf = pd.read_csv(USERS_CSV)
-                                udf = pd.concat([udf, pd.DataFrame([{'username':regval,'password_hash':hash_password(regval),'role':'student','reg_number':regval}])], ignore_index=True)
-                                udf.to_csv(USERS_CSV,index=False)
-                                created += 1
-                            rec = {'reg_number': regval, 'predicted_category': row['predicted_category'], 'advice': row['advice'], 'admin': st.session_state['username'], 'timestamp': datetime.utcnow()}
-                            records.append(rec)
-                            pass_count += 1 if row['predicted_category'] in ['average','high'] else 0
-                            fail_count += 1 if row['predicted_category'] == 'low' else 0
-                        if records:
-                            history_col.insert_many(records)
-                            hdf = pd.read_csv(HISTORY_CSV)
-                            hdf = pd.concat([hdf, pd.DataFrame(records)], ignore_index=True)
-                            hdf.to_csv(HISTORY_CSV, index=False)
-                        st.success(f'Bulk prediction done. Created {created} students.')
-                        st.info(f'Pass: {pass_count} | Fail: {fail_count}')
-                        st.dataframe(df_uploaded.head(200))
-                        st.download_button('Download predictions CSV', df_uploaded.to_csv(index=False).encode('utf-8'), file_name='predictions.csv')
-                    except Exception as e:
-                        st.error(f'Error during training/prediction: {e}')
+                file = st.file_uploader("Upload CSV", type='csv')
+                if file:
+                    df = pd.read_csv(file)
+                    st.write("Preview:", df.head())
+                    reg_col = st.text_input("Enter Reg Number column name (if any)")
+                    if st.button("Train & Predict"):
+                        try:
+                            meta, trained_df = build_and_train_model(df, reg_col)
+                            preds, meta = predict_with_existing_model(df)
+                            advices = [make_advice(p) for p in preds]
+                            df['predicted_category'] = preds
+                            df['advice'] = advices
+                            st.dataframe(df[['predicted_category','advice']].head())
+                            if reg_col and reg_col in df.columns:
+                                for i,row in df.iterrows():
+                                    history_col.insert_one({'reg_number':row[reg_col],'predicted_category':row['predicted_category'],'advice':row['advice'],'admin':st.session_state['username'],'timestamp':datetime.utcnow()})
+                                df_hist = pd.read_csv(HISTORY_CSV)
+                                new_rows = pd.DataFrame([{'reg_number':row[reg_col],'predicted_category':row['predicted_category'],'advice':row['advice'],'admin':st.session_state['username'],'timestamp':datetime.utcnow()} for _,row in df.iterrows()])
+                                df_hist = pd.concat([df_hist,new_rows],ignore_index=True)
+                                df_hist.to_csv(HISTORY_CSV,index=False)
+                                st.success("Predictions saved to history.")
+                        except Exception as e:
+                            st.error(f'Error during training/prediction: {e}')
 
             elif action == 'View History':
-                q = st.text_input('Filter by reg number (optional)')
-                recs = list(history_col.find({'reg_number':str(q)}) if q else history_col.find()).sort('timestamp', -1)
-                recs = list(recs.limit(500))
-                if recs:
-                    df_hist = pd.DataFrame(recs)
-                    st.dataframe(df_hist[['reg_number','predicted_category','advice','admin','timestamp']])
-                    st.download_button('Download history CSV', df_hist.to_csv(index=False).encode('utf-8'), file_name='advice_history.csv')
+                data = list(history_col.find({}))
+                if data:
+                    st.write(pd.DataFrame(data))
                 else:
-                    st.info('No history records found.')
+                    st.info("No history found.")
 
             elif action == 'View Student Replies':
-                recs = list(history_col.find({'advice': {'$regex':'STUDENT_REPLY'}}).sort('timestamp', -1).limit(200))
-                if recs:
-                    df_rep = pd.DataFrame(recs)
-                    st.dataframe(df_rep[['reg_number','advice','timestamp']])
-                else:
-                    st.info('No student replies yet.')
+                st.info("Feature not implemented yet.")
 
 # --- STUDENT PORTAL ---
 with tabs[1]:
     st.header('Student Portal')
-    if 'role' in st.session_state and st.session_state['role']=='student':
-        reg = st.session_state.get('username')
-        st.subheader(f'Welcome {reg}')
-        recs = list(history_col.find({'reg_number':str(reg)}).sort('timestamp', -1).limit(100))
-        if recs:
-            df_recs = pd.DataFrame(recs)
-            st.dataframe(df_recs[['predicted_category','advice','admin','timestamp']])
+    sreg = st.text_input('Reg Number')
+    spw = st.text_input('Password', type='password')
+    if st.button('Login as Student'):
+        ok, role = authenticate(sreg, spw)
+        if ok and role=='student':
+            st.session_state['role']='student'
+            st.session_state['username']=sreg
+            st.experimental_rerun()
         else:
-            st.info('No advice yet.')
-        reply = st.text_area('Reply to Admin')
-        if st.button('Send Reply'):
-            if reply.strip():
-                rec = {'reg_number': reg, 'predicted_category':'', 'advice': f'STUDENT_REPLY: {reply}', 'admin': reg, 'timestamp': datetime.utcnow()}
-                history_col.insert_one(rec)
-                hdf = pd.read_csv(HISTORY_CSV)
-                hdf = pd.concat([hdf, pd.DataFrame([rec])], ignore_index=True)
-                hdf.to_csv(HISTORY_CSV, index=False)
-                st.success('Reply saved')
-            else:
-                st.error('Empty reply')
-    else:
-        sreg = st.text_input('Registration number')
-        spw = st.text_input('Password (use reg number)', type='password')
-        if st.button('Login as Student'):
-            ok, role = authenticate(sreg, spw)
-            if ok and role=='student':
-                st.session_state['role']='student'
-                st.session_state['username']=sreg
-                st.experimental_rerun()
-            else:
-                st.error('Invalid credentials')
+            st.error('Invalid credentials')
+    if 'role' in st.session_state and st.session_state['role']=='student':
+        st.success(f"Logged in as student {st.session_state['username']}")
+        data = list(history_col.find({'reg_number':st.session_state['username']}))
+        if data:
+            st.write(pd.DataFrame(data))
+        else:
+            st.info("No advice history yet.")
 
 # --- ABOUT & HELP ---
 with tabs[2]:
-    st.header('About & Help')
-    st.write('This application predicts student grade categories (low / average / high) using a soft-voting ensemble of KNN and Naive Bayes. Admins can register students, upload CSVs, train models, make predictions, and view advice history & student replies. Students can login with their registration number to view advice and reply.')
-    st.write('Pass/Fail summary: Pass = average/high, Fail = low')
-
-
-# ----------------- End -----------------
+    st.header('About this System')
+    st.write("This system predicts students' future performance based on questionnaire/CSV data using an ensemble of KNN and Naive Bayes. Admins can train models and register students. Students can view predictions and advice.")

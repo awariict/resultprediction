@@ -163,7 +163,7 @@ st.set_page_config(page_title='Result Prediction System', layout='wide')
 st.title('Result Prediction & Advice System')
 st.markdown("""
 <style>
-.stApp { background: linear-gradient(to right, #007BFF, #FFC107, #FF0000); }
+.stApp { background: linear-gradient(to right, #2C3E50, #18BC9C, #F39C12); }
 section[data-testid="stSidebar"] { background: black !important; }
 .sidebar-content { display: flex; flex-direction: column; align-items: center; gap: 12px; margin-top: 20px; }
 .sidebar-btn { width: 180px; height: 44px; background-color: white !important; color: black !important; font-weight: bold; border-radius: 8px; border: none; margin: 0 auto; display: block; }
@@ -402,6 +402,7 @@ with tabs[2]:
     st.header('About & Help')
     st.write('This application predicts student grade categories (low / average / high) using a soft-voting ensemble of KNN and Naive Bayes. Admins can register students, upload CSVs, train models, make predictions, and view advice history & student replies. Students can login with their registration number to view advice and reply.')
     st.write('Pass/Fail summary: Pass = average/high, Fail = low')
+
 
 
 

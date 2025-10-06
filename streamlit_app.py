@@ -107,7 +107,7 @@ def map_category(letter):
     if letter == 'D_or_lower':
         return 'low'
     if letter == 'C':
-        return 'average'
+        return 'medium'
     return 'high'
 
 def build_and_train_model(df: pd.DataFrame, reg_col_hint: str = None):
@@ -154,7 +154,7 @@ def predict_with_existing_model(df: pd.DataFrame):
 def make_advice(category: str) -> str:
     if category == 'low':
         return "Attend remedial classes, meet your lecturer, focus on fundamentals, and seek counseling."
-    if category == 'average':
+    if category == 'medium':
         return "Target weak topics, join study groups, and track progress weekly."
     return "Good performance — aim higher with advanced readings and peer-teaching."
 
@@ -402,6 +402,7 @@ with tabs[2]:
     st.header('About & Help')
     st.write('This application predicts student grade categories (low / average / high) using a soft-voting ensemble of KNN and Naive Bayes. Admins can register students, upload CSVs, train models, make predictions, and view advice history & student replies. Students can login with their registration number to view advice and reply.')
     st.write('Pass/Fail summary: Pass = average/high, Fail = low')
+
 
 
 
